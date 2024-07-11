@@ -1,0 +1,43 @@
+/*** INTRO SECTION ***/
+.intro {
+    background: var(--clr-light-background);
+    padding: 5rem 2rem;
+}
+
+.intro-section__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.intro__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__title--intro {
+    color: var(--clr-dark1);
+    font-size: var(--fs-h2);
+    margin-bottom: 1rem;
+}
+
+.section__subtitle--intro {
+    color: var(--clr-accent);
+    font-size: var(--fs-h3);
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.intro__img {
+    max-width: 400px;
+    border-radius: 10%;
+    margin-top: 2rem;
+    margin-left: 2rem; /* Adds some space between text and image */
+    padding: 0.25rem 0 0 0;
+    border: 5px solid var(--clr-accent);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

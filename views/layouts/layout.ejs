@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/01-root-variables.css">
+        <link rel="stylesheet" href="/css/02-general-styles.css">
+        <link rel="stylesheet" href="/css/03-header-footer.css">
+        <link rel="stylesheet" href="/css/04-intro-section.css">
+        <link rel="stylesheet" href="/css/05-services-section.css">
+        <link rel="stylesheet" href="/css/06-about-me-section.css">
+        <link rel="stylesheet" href="/css/07-my-work-section.css">
+        <link rel="stylesheet" href="/css/08-contact-me-section.css">
+        <link rel="stylesheet" href="/css/09-portfolio-item.css">
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <!-- Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- EmailJS CDN -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+        <!-- Title -->
+        <title>Gianmario's Portfolio</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <% if (isMain) { %>
+            <%- include('../partials/header1') %>
+        <% } else { %>
+            <%- include('../partials/header2') %>
+        <% } %>
+    
+        <%- body %> 
+        
+        <%- include('../partials/footer') %>
+        
+        <script src="/js/index.js"></script>
+        </body>
+
+</html>

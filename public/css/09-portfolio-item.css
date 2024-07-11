@@ -1,0 +1,150 @@
+/*** INTRO SECTION ***/
+.portfolio-item__intro {
+    background: var(--clr-light-background);
+    color: var(--clr-dark1);
+    padding: 5rem 2rem;
+}
+
+.portfolio-item-intro__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.portfolio-item-intro__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-item__title--intro {
+    color: var(--clr-dark1);
+    font-size: var(--fs-h2);
+    margin-bottom: 1rem;
+}
+
+.portfolio-item__subtitle--intro {
+    color: var(--clr-accent);
+    font-size: var(--fs-h3);
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.portfolio-item-description {
+    color: var(--clr-dark1);
+    padding: 2em;
+}
+
+.portfolio-item-intro__img {
+    max-width: 550px;
+    border-radius: 10%;
+    margin-top: 2rem;
+    margin-left: 4rem; /* Adds some space between text and image */
+    /* border: 10px solid var(--clr-accent); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio item body */
+
+.portfolio-item-individual {
+    background: var(--clr-dark-background);
+    color: var(--clr-light);
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual h2, h3, h4 {
+    color: var(--clr-accent);
+    margin-top: 2em;
+}
+
+.portfolio-item-individual p {
+    /* background: var(--clr-light-background);
+    color: var(--clr-dark1); */
+    max-width: 40em;
+    margin-right: auto;
+    text-align: left;
+}
+
+.portfolio-item-individual a {
+    color: var(--clr-accent);
+}
+
+/* Technologies */
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* max-width: 700px; */
+    max-width: 140em;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.tag {
+    /* padding: 10px 15px; */
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    gap: 5px;
+}
+
+/* Categories */
+.language {
+    background-color: #f0db4f;
+    color: black
+}
+
+.framework {
+    background-color: #61dafb;
+    color: black
+}
+
+.backend {
+    background-color: #333;
+}
+
+.database {
+    background-color: #4caf50;
+}
+
+.other {
+    background-color: #f44336;
+
+}
+
+/* Icons */
+.technology i {
+    /* font-size: 1.2em; */
+    font-size: 1em;
+}
+
+
+/*** MEDIA QUERIES ***/
+@media (max-width: 768px) {
+
+    .portfolio-item-intro__text {
+        align-items: center;
+    }
+
+    .portfolio-item-intro__img {
+        margin-left: 0;
+        margin-top: 2rem;
+        max-width: 400px;
+
+    }
+
+    .portfolio-item-intro__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+}

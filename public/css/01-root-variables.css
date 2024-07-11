@@ -1,0 +1,46 @@
+/* Root variables and general styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    /* --clr-dark is for header and footer */
+    /* --clr-light: #FF8943;
+    --clr-dark: #7A706A; 
+    --clr-dark1: #283B3B;
+    --clr-accent: #6BFAFA;
+    --clr-light-background: #CF9B7C;
+    --clr-dark-background: #6A7A7A; */
+
+    --clr-light: #B68D79;
+    --clr-dark: #61544E;
+    --clr-dark1: #61544E;
+    --clr-accent: #FF8B55;
+    --clr-light-background: #78A19D;
+    --clr-dark-background: #4E615F;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}

@@ -1,0 +1,38 @@
+/*** SERVICES SECTION ***/
+.my-services {
+    background: var(--clr-dark-background);
+    padding: 60px 20px;
+}
+
+.section__title--services {
+    font-size: var(--fs-h2);
+    color: var(--clr-light);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    background: var(--clr-light-background);
+    color: var(--clr-dark1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%;
+    box-shadow: var(--bs);
+    transition: transform 0.3s;
+}
+
+.service h3 {
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: .9rem;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}

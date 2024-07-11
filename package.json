@@ -3,7 +3,7 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2"
   },
-  "name": "gianmario-portfolio",
+  "name": "gianmario-portfolio-new",
   "description": "",
   "version": "1.0.0",
   "main": "app.js",
