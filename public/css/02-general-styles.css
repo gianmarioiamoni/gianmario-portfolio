@@ -172,6 +172,38 @@ animation: fadeIn 5s;
     }
 }
 
+/* Fade in transition for image hover */
+/* .fade-in-image:hover {
+    opacity: 0.5;
+} */
+.fade-in-image-hover {
+    opacity: 50%;
+}
+
+.fade-in-image-hover:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+/* Fade in transition for buttons */
+.fade-in-btn {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+
+/* Fade in transition for titles */
+.fade-in-title {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
 /* Fade in transition for sections */
 .fade-in-section {
     animation: fadeIn 1.5s;
