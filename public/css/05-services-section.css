@@ -5,8 +5,7 @@
 }
 
 .section__title--services {
-    font-size: var(--fs-h2);
-    color: var(--clr-light);
+    text-align: center;
 }
 
 .services {
@@ -26,6 +25,8 @@
 }
 
 .service h3 {
+    color: var(--clr-dark1);
+    font-weight: var(--fw-bold);
     margin-bottom: 15px;
 }
 

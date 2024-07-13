@@ -37,6 +37,11 @@
     font-weight: bolder;
 }
 
+.section__paragraph--work {
+    margin-bottom: 3rem;
+    color: var(--clr-light);
+}
+
 /* portfolio */
 .portfolio {
     display: grid;

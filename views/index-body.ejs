@@ -2,13 +2,31 @@
 <section class="intro section" id="home">
     <div class="intro-section__content">
         <div class="intro__text">
-            <h1 class="section__title section__title--intro fade-in">
+            <h1 class="section__title section__title--intro fade-in-text">
                 Hi, I'm <strong>Gianmario</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro fade-in">Full-Stack Developer</p>
+            <p class="section__subtitle-dark fade-in-text">Full-Stack Developer</p>
+            <ul class="skills">
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>EJS</li>
+                <li>Tailwind CSS</li>
+                <li>Material-UI</li>
+                <li>Redux</li>
+                <li>Express.js</li>
+                <li>Mongoose</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+            </ul>
         </div>
-        <img src="/img/intro.png" alt="a picture of me" class="intro__img fade-in">
+        <img src="/img/intro.png" alt="a picture of me" class="intro__img fade-in-image">
+        
     </div>
+    
 </section>
 
 
@@ -17,7 +35,7 @@
 <!-- My services section -->
 <section class="my-services section" id="services">
     <div class="section__content">
-        <h2 class="section__title section__title--services fade-in">What I do</h2>
+        <h2 class="section__title-light section__title--services fade-in">What I do</h2>
         <div class="services fade-in">
             <div class="service">
                 <h3>Custom Web Application Design and Development</h3>
@@ -30,6 +48,7 @@
             <!-- /service -->
             <div class="service">
                 <h3>API Design and Integration</h3>
+                <h3></h3>
                 <p>Designing and implementing RESTful APIs for seamless communication between different software
                     systems.
                     Expertise in integrating third-party APIs to enhance application functionality, including payment
@@ -50,7 +69,7 @@
             <!-- /service -->
         </div>
         <!-- /services -->
-        <a href="#work" class="btn fade-in">My Work</a>
+        <a href="#work" class="btn">My Work</a>
     </div>
 </section>
 
@@ -62,52 +81,99 @@
         <!-- Header -->
         <div class="about-me__header">
             <!-- Titles -->
-            <div class="about-me__title fade-in">
-                <h2 class="section__title section__title--about fade-in">Who I am</h2>
-                <p class="section__subtitle section__subtitle--about fade-in">Software Designer & Developer based out of
+            <div class="about-me__title-div fade-in">
+                <h2 class="section-title-dark">Who I am</h2>
+                <p class="section__subtitle-dark fade-in">Software Designer & Developer based out of
                     Milan
                     (Italy)</p>
             </div>
             <!-- Image -->
             <img src="/img/about-me.png" alt="" class="about-me__img fade-in">
-        
+
         </div>
-    <div class="about-me__body fade-in">
-        <p>Hello there! I'm Gianmario, a passionate full-stack developer based in Italy.</p>
-        <p>I have a passion for technology, and I'm constantly seeking new ways to push the boundaries of what's
-            possible. I'm excited to tackle complex problems and create innovative solutions that solve real-world
-            problems.</p>
-        <p>With over two decades of experience in the IT industry, my journey began as a software engineer specializing
-            in telecommunications networks. Over the years, I've transitioned into sales management roles, driving
-            technological solutions in industrial automation, IT, and IoT sectors.</p>
-        <p>Today, I'm diving back into my technical roots, focusing on freelance projects in web development using the
-            MERN stack. I thrive on solving complex problems and delivering innovative solutions that exceed client
-            expectations.</p>
+        <div class="about-me__body fade-in">
+            <p>Hello there! I'm Gianmario, a passionate full-stack developer based in Italy.</p>
+            <p>I have a passion for technology, and I'm constantly seeking new ways to push the boundaries of what's
+                possible. I'm excited to tackle complex problems and create innovative solutions that solve real-world
+                problems.</p>
+            <p>With over two decades of experience in the IT industry, my journey began as a software engineer
+                specializing
+                in telecommunications networks. Over the years, I've transitioned into sales management roles, driving
+                technological solutions in industrial automation, IT, and IoT sectors.</p>
+            <p>Today, I'm diving back into my technical roots, focusing on freelance projects in web development using
+                the
+                MERN stack. I thrive on solving complex problems and delivering innovative solutions that exceed client
+                expectations.</p>
 
-        <h3>My Approach</h3>
-        <p>In every project, I bring a blend of technical expertise and strategic insight. My approach is rooted in a
-            deep understanding of client needs, coupled with agile development practices to ensure timely and efficient
-            delivery. I'm constantly expanding my skills in AI, DevOps, and cloud technologies to stay at the forefront
-            of innovation.</p>
+            <h3 class="approach__title">My Approach</h3>
+            <p>In every project, I bring a blend of technical expertise and strategic insight. My approach is rooted in
+                a
+                deep understanding of client needs, coupled with agile development practices to ensure timely and
+                efficient
+                delivery. I'm constantly expanding my skills in AI, DevOps, and cloud technologies to stay at the
+                forefront
+                of innovation.</p>
 
-        <h3>My Skills</h3>
-        <ul class="skills">
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>React</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>EJS</li>
-            <li>Tailwind CSS</li>
-            <li>Material-UI</li>
-            <li>Redux</li>
-            <li>Express.js</li>
-            <li>Mongoose</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-        </ul>
-    </div>
+            <!-- My Experience -->
+                <h3 class="experience__title">My Experience</h3>
+                <div class="experience__content">
+                    <!-- Experience 1 -->
+                    <div class="experience__item">
+                        <div class="experience__icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="experience__details">
+                            <h3>Software Engineering</h3>
+                            <p>Responsible for developing and maintaining web applications using modern technologies
+                                like React,
+                                Node.js, and MongoDB.</p>
+                        </div>
+                    </div>
+                    <!-- Experience 2 -->
+                    <div class="experience__item">
+                        <div class="experience__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="experience__details">
+                            <h3>Freelance Web Developer</h3>
+                            <p>3+ years of experience</p>
+                            <p>Worked on over 10 projects ranging from e-commerce platforms to personal blogs.</p>
+                        </div>
+                    </div>
+                    <!-- Experience 3 -->
+                    <div class="experience__item">
+                        <div class="experience__icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="experience__details">
+                            <h3>Projects</h3>
+                            <p>10+ projects</p>
+                            <ul>
+                                <li>E-commerce platform for a local business</li>
+                                <li>Responsive portfolio website</li>
+                                <li>Real-time chat application</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Additional Experience -->
+                    <div class="experience__item">
+                        <div class="experience__icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="experience__details">
+                            <h3>Certifications</h3>
+                            <p>Completed courses on:</p>
+                            <ul>
+                                <li>Full-Stack Web Development</li>
+                                <li>React and Redux</li>
+                                <li>Node.js and Express</li>
+                                <li>MongoDB and Mongoose</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
 
     </div>
 </section>
@@ -119,8 +185,9 @@
     <div class="my-work-section__content fade-in">
         <!-- Header -->
         <div class="work__title fade-in">
-            <h2 class="section__title section__title--work fade-in">My work</h2>
-            <p class="section__subtitle section__subtitle--work fade-in">A selection of my range of work</p>
+            <h2 class="section__title-light fade-in">My work</h2>
+            <p class="section__subtitle-light fade-in">A selection of my range of work</p>
+            <p class="section__paragraph--work">Click on any project to learn more</p>
         </div>
 
         <!-- Portfolio -->
@@ -152,8 +219,9 @@
     <div class="contact-me-section__content">
         <!-- Header -->
         <div class="contact-me__header">
-            <h2 class="section__title section__title--contact fade-in">Contact Me</h2>
-            <p class="section__subtitle section__subtitle--contact fade-in">Get in touch</p>
+            <!-- <h2 class="section__title section__title--contact fade-in">Contact Me</h2> -->
+            <h2 class="section-title-dark section__title--contact fade-in">Contact Me</h2>
+            <p class="section__subtitle-dark fade-in">Get in touch</p>
         </div>
 
         <!-- Form -->

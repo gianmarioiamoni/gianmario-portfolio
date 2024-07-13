@@ -40,6 +40,17 @@
     .portfolio__item {
         flex: 1 1 100%;
     }
+
+    .about-me__header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me__img {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
 }
 
 .error-message {

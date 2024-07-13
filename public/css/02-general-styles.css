@@ -22,6 +22,34 @@ section {
     position: relative;
 }
 
+.section__title-light {
+    color: var(--clr-light);
+    font-size: var(--fs-h2);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.section-title-dark {
+    color: var(--clr-dark1);
+    font-size: var(--fs-h2);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.section__subtitle-light {
+    color: var(--clr-light);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-semibold);
+    text-align: left;
+}
+
+.section__subtitle-dark {
+    color: var(--clr-dark1);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-semibold);
+    text-align: left;
+}
+
 .section__content {
     display: flex;
     flex-direction: column;
@@ -34,24 +62,18 @@ section {
 /* Divider */
 .section-divider {
     height: 2px;
-    /* Altezza della linea */
     width: 100%;
-    /* Larghezza della linea */
     background-color: var(--clr-accent);
-    /* Colore della linea */
     margin: 0 auto;
-    /* Margine sopra e sotto la linea, e centratura orizzontale */
     position: relative;
 }
 
 .section-divider::before {
     left: -25%;
-    /* Posizione della linea a sinistra */
 }
 
 .section-divider::after {
     right: -25%;
-    /* Posizione della linea a destra */
 }
 
 /* Typography */
@@ -87,3 +109,88 @@ strong {
 .btn:hover {
     transform: scale(1.1);
 }
+
+/* Effects */
+
+/* Fade in transition for images */
+.fade-in-image {
+animation: fadeIn 5s;
+-webkit-animation: fadeIn 5s;
+-moz-animation: fadeIn 5s;
+-o-animation: fadeIn 5s;
+-ms-animation: fadeIn 5s;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade in transition for sections */
+.fade-in-section {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+    -ms-animation: fadeIn 1.5s;
+}
+
+
+/* Fade in transition for text */
+.fade-in-text {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+
+
+
+

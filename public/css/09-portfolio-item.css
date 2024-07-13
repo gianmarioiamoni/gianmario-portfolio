@@ -27,9 +27,9 @@
 }
 
 .portfolio-item__subtitle--intro {
-    color: var(--clr-accent);
+    color: var(--clr-dark1);
     font-size: var(--fs-h3);
-    font-weight: bolder;
+    font-weight: var(--fw-semibold);
     margin-bottom: 2rem;
 }
 
@@ -57,8 +57,9 @@
     margin: 0 auto;
 }
 
-.portfolio-item-individual h2, h3, h4 {
-    color: var(--clr-accent);
+.portfolio-item-individual h3, h4 {
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
     margin-top: 2em;
 }
 

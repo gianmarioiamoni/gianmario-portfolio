@@ -10,9 +10,11 @@
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
+    --fw-semibold: 500;
     --fw-bold: 900;
 
     /* --clr-dark is for header and footer */
+    
     /* --clr-light: #FF8943;
     --clr-dark: #7A706A; 
     --clr-dark1: #283B3B;
@@ -24,6 +26,7 @@
     --clr-dark: #61544E;
     --clr-dark1: #61544E;
     --clr-accent: #FF8B55;
+    --clr-accent-dark: #ef773f;
     --clr-light-background: #78A19D;
     --clr-dark-background: #4E615F;
 

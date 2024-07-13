@@ -5,33 +5,20 @@
     padding: 60px 20px;
 }
 
-.section__title--about {
-    font-size: var(--fs-h2);
-}
-
-.section__subtitle--about {
-    font-size: var(--fs-h3);
-    margin-bottom: 1rem;
-    color: var(--clr-accent);
-    font-weight: bolder;
-}
-
-.about-me__title {
-    margin-bottom: 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    ;
-    /* align-items: center; */
-    color: var(--clr-dark)
-}
-
 .about-me__header {
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
+}
+
+.about-me__title-div {
+    margin-bottom: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: auto;
 }
 
 .about-me__body {
@@ -47,8 +34,12 @@
     margin-top: 2rem;
     margin-left: 5rem; /* Adds some space between text and image */
     background: none;
-    /* border: 5px solid var(--clr-secondary); */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.approach__title {
+    color: var(--clr-dark1);
+    font-weight: var(--fw-bold);
+
 }
 
 /* Skills */
@@ -65,10 +56,74 @@
 }
 
 .skills li {
-    background: var(--clr-accent);
+    background: var(--clr-light);
     color: var(--clr-dark1);
     font-weight: bolder;
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: var(--bs);
+}
+
+/* Experience */
+.experience {
+    padding: 60px 0;
+}
+
+.section__title--experience {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.experience__title {
+    color: var(--clr-dark1);
+    text-align: center;
+}
+
+.experience__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience__item {
+    background-color: var(--clr-dark-background);
+    color: var(--clr-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.experience__icon {
+    font-size: 2rem;
+    color: var(--clr-light);
+    align-self: center;
+}
+
+.experience__details {
+    flex: 1;
+}
+
+.experience__details h3 {
+    margin: 0 0 10px;
+}
+
+.experience__details p,
+.experience__details ul {
+    margin: 0;
+}
+
+.experience__details ul {
+    list-style-type: disc;
+    
+    padding-left: 20px;
+}
+
+.experience__details ul li {
+    margin-bottom: 5px;
 }
