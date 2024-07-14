@@ -87,7 +87,6 @@ strong {
     outline-offset: 3px;
 }
 
-
 /* Button */
 .btn {
     display: inline-block;
@@ -173,9 +172,6 @@ animation: fadeIn 5s;
 }
 
 /* Fade in transition for image hover */
-/* .fade-in-image:hover {
-    opacity: 0.5;
-} */
 .fade-in-image-hover {
     opacity: 50%;
 }

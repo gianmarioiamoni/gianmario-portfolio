@@ -42,28 +42,6 @@
 
 }
 
-/* Skills */
-
-.skills {
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    max-width: 60rem;
-}
-
-.skills li {
-    background: var(--clr-light);
-    color: var(--clr-dark1);
-    font-weight: bolder;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: var(--bs);
-}
-
 /* Experience */
 .experience {
     padding: 60px 0;
