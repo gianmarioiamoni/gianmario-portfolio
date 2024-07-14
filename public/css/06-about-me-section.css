@@ -95,6 +95,13 @@
     width: 300px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience__item-container {
+    display: flex;
     align-items: flex-start;
     gap: 20px;
 }
@@ -133,14 +140,12 @@
 }
 
 .experience-btn {
-    align-self: baseline;
-    margin-top: 3rem;
+    align-self: flex-end;
     border: none;
     border-radius: 5px;
     padding: 0.625rem 1.25rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-
 }
 

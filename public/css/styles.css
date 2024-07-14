@@ -46,6 +46,10 @@
        padding: 0; 
     }
 
+    .experience-btn {
+        align-self: center;
+    }
+
     .about-me__header {
         flex-direction: column;
         align-items: center;
