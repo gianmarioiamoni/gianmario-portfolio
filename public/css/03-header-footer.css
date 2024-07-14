@@ -56,6 +56,14 @@ header {
     background: var(--clr-accent);
 }
 
+/* Separator styles */
+.nav__separator {
+    width: calc(100% - 2rem);
+    height: 1px;
+    background-color: var(--clr-light);
+    margin: 0 1rem;
+}
+
 /* Hamburger */
 .hamburger {
     padding: .5em;
