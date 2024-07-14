@@ -21,7 +21,7 @@
     margin: 10px;
     flex: 1 1 30%;
     box-shadow: var(--bs);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .service h3 {
@@ -34,6 +34,19 @@
     font-size: .9rem;
 }
 
+.service ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 .service:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--clr-dark-background);
+    color: var(--clr-light);
+}
+
+.service:hover h3,
+.service:hover p {
+    color: var(--clr-light);
 }

@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.nav');
     const header = document.querySelector('header');
-    console.log("is navToggle =", navToggle!==null);
 
     if (navToggle && nav && header) {
         navToggle.addEventListener('click', () => {

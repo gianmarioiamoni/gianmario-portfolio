@@ -41,6 +41,11 @@
         flex: 1 1 100%;
     }
 
+    .experience__details ul {
+       list-style: none;
+       padding: 0; 
+    }
+
     .about-me__header {
         flex-direction: column;
         align-items: center;

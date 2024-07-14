@@ -14,6 +14,11 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+// Routing for certifications page
+app.get('/certifications', (req, res) => {
+    res.render('certifications');
+});
+
 // Routing per il dettaglio del progetto 01
 app.get('/projects/portfolio-item-01', (req, res) => {
     res.render('projects/portfolio-item-01');
