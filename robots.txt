@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gianmario-portfolio.onrender.com/sitemap.xml
