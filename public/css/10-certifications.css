@@ -86,7 +86,7 @@
     margin: 3rem auto;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
@@ -175,6 +175,10 @@
         max-width: 10rem;
     }
 
+    .certification-small-img:hover {
+        transform: scale(2.5);
+    }
+
     .education__images {
         flex-direction: column;
         gap: 1rem;
@@ -184,4 +188,10 @@
         max-width: 10rem;
         margin: 0 auto;
     }
+
+    .education-small-img:hover {
+        transform: scale(2.5);
+    }
+
+
 }
