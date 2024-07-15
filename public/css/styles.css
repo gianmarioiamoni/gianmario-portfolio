@@ -8,7 +8,7 @@
     }
 
     .section-divider {
-        width: 100%;
+        width: 70%;
     }
 
     /* Intro section */
@@ -68,5 +68,4 @@
     font-size: 0.9em;
     margin-top: 10px;
     display: none;
-    /* Error message is hidden by default */
 }
