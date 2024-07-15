@@ -44,10 +44,10 @@ app.get('/projects/portfolio-item-04', (req, res) => {
     res.render('projects/portfolio-item-04');
 });
 
-// // Route per la homepage
-// app.get('/services', (req, res) => {
-//     res.render('services');
-// });
+// Routing per il dettaglio del progetto 05
+app.get('/projects/portfolio-item-05', (req, res) => {
+    res.render('projects/portfolio-item-05');
+});
 
 
 // Avvio del server

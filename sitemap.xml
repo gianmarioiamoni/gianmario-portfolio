@@ -60,4 +60,10 @@
         <changefreq>never</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://gianmario-portfolio.onrender.com/projects/portfolio-item-05</loc>
+        <lastmod>2024-07-16</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
