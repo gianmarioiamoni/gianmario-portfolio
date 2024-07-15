@@ -19,6 +19,11 @@ app.get('/certifications', (req, res) => {
     res.render('certifications');
 });
 
+// Routing for sitemap
+app.get('/sitemap.xml', (req, res) => {
+    res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
+
 // Routing per il dettaglio del progetto 01
 app.get('/projects/portfolio-item-01', (req, res) => {
     res.render('projects/portfolio-item-01');
