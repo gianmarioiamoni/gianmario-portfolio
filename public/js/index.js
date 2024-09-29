@@ -69,6 +69,12 @@ document.addEventListener('DOMContentLoaded', function () {
 // Contact me form button management
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById('contact-form');
+
+    if (!form) {
+        console.error('Form not found');
+        return; // Fermare l'esecuzione se il form non esiste
+    }
+
     const submitButton = document.getElementById('submit-button');
     const errorMessage = document.getElementById('error-message');
     const requiredFields = form.querySelectorAll('[required]');
