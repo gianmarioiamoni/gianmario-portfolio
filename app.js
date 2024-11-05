@@ -54,6 +54,11 @@ app.get('/projects/portfolio-item-06', (req, res) => {
     res.render('projects/portfolio-item-06');
 });
 
+// Routing per il dettaglio del progetto 07
+app.get('/projects/portfolio-item-07', (req, res) => {
+    res.render('projects/portfolio-item-07');
+});
+
 
 // Avvio del server
 const PORT = process.env.PORT || 3000;
