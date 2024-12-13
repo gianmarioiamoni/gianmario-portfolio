@@ -19,6 +19,11 @@ app.get('/certifications', (req, res) => {
     res.render('certifications');
 });
 
+// Routing for privacy page
+app.get('/privacy', (req, res) => {
+    res.render('privacy');
+});
+
 // Routing for sitemap
 app.get('/sitemap.xml', (req, res) => {
     res.sendFile(path.join(__dirname, 'sitemap.xml'));
@@ -61,7 +66,7 @@ app.get('/projects/portfolio-item-07', (req, res) => {
 
 
 // Avvio del server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

@@ -1,0 +1,129 @@
+/*** ABOUT ME SECTION ***/
+.privacy {
+    background: var(--clr-light-background);
+    color: var(--clr-dark1);
+    padding: 60px 20px;
+}
+
+.privacy__header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.privacy__title-div {
+    margin-bottom: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: auto;
+}
+
+.privacy__body {
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 60rem;
+}
+
+.privacy__img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-left: 5rem; /* Adds some space between text and image */
+    background: none;
+}
+
+.approach__title {
+    color: var(--clr-dark1);
+    font-weight: var(--fw-bold);
+
+}
+
+/* Experience */
+.experience {
+    padding: 60px 0;
+}
+
+.section__title--experience {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.experience__title {
+    color: var(--clr-dark1);
+    text-align: center;
+}
+
+.experience__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience__item {
+    background-color: var(--clr-dark-background);
+    color: var(--clr-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience__item-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.experience__icon {
+    font-size: 2rem;
+    color: var(--clr-light);
+    align-self: center;
+}
+
+.experience__details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.experience__details h3 {
+    margin: 0 0 10px;
+}
+
+.experience__details p,
+.experience__details ul {
+    margin: 0;
+}
+
+.experience__details ul {
+    list-style-type: disc;
+    
+    padding-left: 20px;
+}
+
+.experience__details ul li {
+    margin-bottom: 5px;
+}
+
+.experience-btn {
+    align-self: flex-end;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
