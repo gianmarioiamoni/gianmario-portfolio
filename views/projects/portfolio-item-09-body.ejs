@@ -1,0 +1,230 @@
+<!-- Introduction -->
+<section class="portfolio-item__intro">
+    <div class="portfolio-item-intro__content">
+
+        <!-- Header -->
+        <div class="portfolio-item-intro__text">
+            <h1 class="portfolio-item__title--intro">
+                PIVA Balance 
+            </h1>
+            <p class="portfolio-item__subtitle--intro">Full-stack User Directory Application</p>
+            <p class="portfolio-item-description">
+                Dir-Utenti 2.0 is a responsive, real-time user management application built to enhance productivity and
+                user experience.
+                Featuring advanced technologies like Socket.IO and Redis for real-time updates and concurrent editing
+                protection,
+                this full-stack solution leverages the latest tools to deliver an efficient, secure, and scalable
+                platform.
+            </p>
+        </div>
+
+        <!-- Image -->
+        <img src="/img/portfolio-09-intro.png" alt="PIVA Balance"
+            class="portfolio-item-intro__img fade-in-image">
+
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="portfolio-item-individual">
+
+    <!-- Technologies -->
+    <section class="technologies">
+        <div class="technology tag framework">
+            <i class="fab fa-react"></i> Next.js
+        </div>
+        <div class="technology tag language">
+            <i class="fab fa-js"></i> TypeScript
+        </div>
+        <div class="technology tag framework">
+            <i class="fab fa-css3-alt"></i> Tailwind CSS
+        </div>
+        <div class="technology tag backend">
+            <i class="fas fa-server"></i> Node.js
+        </div>
+        <div class="technology tag backend">
+            <i class="fas fa-server"></i> Express.js
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> MongoDB
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-key"></i> Redis
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-cloud-upload-alt"></i> Cloudinary
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <h3>Key Functionalities:</h3>
+    <ul>
+        <li>View users with server-side pagination</li>
+        <li>Real-time updates using Socket.IO</li>
+        <li>Add, edit, and delete users</li>
+        <li>Profile image management with Cloudinary</li>
+        <li>Responsive design for mobile and desktop</li>
+        <li>Search and filter users by name, surname, or email</li>
+        <li>Concurrent editing protection with Redis</li>
+    </ul>
+
+    <img src="https://github.com/user-attachments/assets/75abc4df-ed66-42c0-a462-d4434810a646" alt="CAPTCHA"
+        class="security-image">
+    
+    <br \>
+    
+    <img src="https://github.com/user-attachments/assets/6836e1de-e737-493b-8ba3-6e850ffbc5aa" alt="CAPTCHA"
+        class="security-image">
+    
+    <br \>
+
+    <img src="https://github.com/user-attachments/assets/7b155b74-6e07-4f2b-bcf3-ac627db90367" alt="CAPTCHA"
+        class="security-image">
+    
+    <br \>
+
+    <img src="https://github.com/user-attachments/assets/96e13bfd-4be3-4204-91a0-c0ebff04a139" alt="CAPTCHA"
+        class="security-image">
+    
+    <br \>
+
+    <h3>Real-Time Updates</h3>
+    <p>
+        Dir-Utenti 2.0 utilizes <strong>Socket.IO</strong> for real-time notifications, ensuring instant updates for all
+        connected clients.
+        Notifications are triggered for actions like adding, editing, or deleting users, making collaboration seamless
+        and efficient.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/a560d653-a239-4e47-9b56-10ed12fcda3b" alt="CAPTCHA"
+        class="security-image">
+    
+    <br \>
+
+    <img src="https://github.com/user-attachments/assets/353d5bfa-8411-4a05-af74-3f8bed9d51bf" alt="CAPTCHA"
+        class="security-image">
+    
+    <br \>
+
+    <h3>Concurrent Editing Protection</h3>
+    <p>
+        Using <strong>Redis locks</strong>, the application prevents concurrent editing of the same user profile.
+        This mechanism ensures data integrity and avoids conflicting changes:
+    </p>
+    <ul>
+        <li>Locks are automatically acquired when a user starts editing.</li>
+        <li>Locks expire after 30 seconds unless renewed.</li>
+        <li>Only clients holding the lock can save changes.</li>
+        <li>Locks are released after saving or canceling the edit.</li>
+    </ul>
+
+    <img src="https://github.com/user-attachments/assets/9741404e-9cc1-493e-9150-79dfc577dd2b" alt="CAPTCHA"
+        class="security-image">
+
+    <br \>
+
+    <div class="portfolio-item-individual">
+    
+        <!-- Technologies -->
+        <section class="technologies">
+            <div class="technology tag framework">
+                <i class="fab fa-react"></i> Next.js
+            </div>
+            <div class="technology tag language">
+                <i class="fab fa-js"></i> TypeScript
+            </div>
+            <div class="technology tag framework">
+                <i class="fab fa-css3-alt"></i> Tailwind CSS
+            </div>
+            <div class="technology tag database">
+                <i class="fas fa-database"></i> MongoDB
+            </div>
+            <div class="technology tag other">
+                <i class="fas fa-chart-line"></i> Recharts
+            </div>
+            <div class="technology tag other">
+                <i class="fas fa-key"></i> JWT Auth
+            </div>
+            <div class="technology tag other">
+                <i class="fas fa-shield-alt"></i> Zod Validation
+            </div>
+            <div class="technology tag other">
+                <i class="fas fa-mobile-alt"></i> PWA
+            </div>
+        </section>
+    
+        <div class="section-divider"></div>
+    
+        <h3>Key Functionalities:</h3>
+        <ul>
+            <li>Complete tax management system for Italian freelancers and VAT holders</li>
+            <li>JWT authentication with role-based access control (user/admin/super_admin)</li>
+            <li>Invoice management with automatic VAT calculations</li>
+            <li>Cost tracking with categorization and deductibility analysis</li>
+            <li>Customizable dashboard with drag & drop widget system</li>
+            <li>Advanced charting system with SSR/CSR hybrid rendering</li>
+            <li>Business Intelligence dashboard with automated KPI calculations</li>
+            <li>100% GDPR compliance with Privacy by Design architecture</li>
+            <li>Mobile-first PWA with offline support and touch gestures</li>
+            <li>Report generation system with PDF/Excel/CSV export</li>
+        </ul>
+    
+        <img src="https://github.com/user-attachments/assets/75abc4df-ed66-42c0-a462-d4434810a646" alt="CAPTCHA"
+            class="security-image">
+    
+        <br \>
+    
+        <img src="https://github.com/user-attachments/assets/6836e1de-e737-493b-8ba3-6e850ffbc5aa" alt="CAPTCHA"
+            class="security-image">
+    
+        <br \>
+    
+        <img src="https://github.com/user-attachments/assets/7b155b74-6e07-4f2b-bcf3-ac627db90367" alt="CAPTCHA"
+            class="security-image">
+    
+        <br \>
+    
+        <img src="https://github.com/user-attachments/assets/96e13bfd-4be3-4204-91a0-c0ebff04a139" alt="CAPTCHA"
+            class="security-image">
+    
+        <br \>
+    
+        <h3>Advanced Analytics & Business Intelligence</h3>
+        <p>
+            PIVABalance features a comprehensive <strong>Business Intelligence system</strong> that automatically calculates
+            6 critical financial KPIs and generates actionable business insights.
+            The system includes advanced chart components with drill-down capabilities, interactive filtering, and
+            multi-period comparisons to help freelancers make data-driven decisions about their business.
+        </p>
+    
+        <img src="https://github.com/user-attachments/assets/a560d653-a239-4e47-9b56-10ed12fcda3b" alt="CAPTCHA"
+            class="security-image">
+    
+        <br \>
+    
+        <img src="https://github.com/user-attachments/assets/353d5bfa-8411-4a05-af74-3f8bed9d51bf" alt="CAPTCHA"
+            class="security-image">
+    
+        <br \>
+    
+        <h3>GDPR Compliance & Security</h3>
+        <p>
+            Built with <strong>Privacy by Design</strong> principles, PIVABalance achieves 100% GDPR compliance through:
+        </p>
+        <ul>
+            <li>Comprehensive cookie consent management with audit trail</li>
+            <li>Automated privacy request system supporting all GDPR rights (Art. 12-23)</li>
+            <li>Complete user data export functionality (Art. 20 GDPR)</li>
+            <li>Role-based access control with secure JWT authentication</li>
+            <li>BCrypt password hashing and input validation with Zod schemas</li>
+            <li>Account lockout protection against brute force attacks</li>
+        </ul>
+    
+        <img src="https://github.com/user-attachments/assets/9741404e-9cc1-493e-9150-79dfc577dd2b" alt="CAPTCHA"
+            class="security-image">
+    
+        <br \>
+    </div>
+</div>
