@@ -1,0 +1,207 @@
+<!-- Introduction -->
+
+<section class="portfolio-item__intro">
+    <div class="portfolio-item-intro__content">
+        <!-- Header -->
+        <div class="portfolio-item-intro__text">
+            <h1 class="portfolio-item__title--intro">
+                AI Knowledge Companion
+            </h1>
+            <p class="portfolio-item__subtitle--intro">A production-ready AI learning platform built with Next.js 15, TypeScript, and OpenAI GPT-4. 
+            Features RAG (Retrieval-Augmented Generation), multi-format document processing, and a marketplace for sharing AI tutors with the community.</p>
+            
+            <!-- Link al sito live -->
+            <p class="portfolio-item-links">
+                <a href="https://ai-knowledge-companion.vercel.app/en" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fas fa-external-link-alt"></i> Visit Live Site
+                </a>
+                <a href="https://github.com/gianmarioiamoni/ai-knowledge-companion" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </p>
+            
+            <p class="portfolio-item-description">
+                AI Knowledge Companion is a comprehensive, production-ready platform that transforms your documents, audio, video, and images 
+                into interactive AI tutors powered by advanced Retrieval-Augmented Generation (RAG). Built with Next.js 15, TypeScript, and 
+                Supabase, it features intelligent document processing with vector embeddings, automated transcription for audio/video files, 
+                and OCR capabilities for image analysis.
+                
+            </p>
+        </div>
+        <!-- Image -->
+        <img src="https://github.com/user-attachments/assets/7cc293c6-4b0a-42ba-ace5-c5f3ba1e21c6" alt="AI Knowledge Companion"
+            class="portfolio-item-intro__img fade-in-image">
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="portfolio-item-individual">
+    <!-- Technologies -->
+    <section class="technologies">
+        <div class="technology tag framework">
+            <i class="fab fa-react"></i> Next.js 15
+        </div>
+        <div class="technology tag language">
+            <i class="fab fa-js-square"></i> TypeScript
+        </div>
+        <div class="technology tag framework">
+            <i class="fab fa-css3-alt"></i> Tailwind CSS
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> Supabase (PostgreSQL)
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-robot"></i> OpenAI GPT-4
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-brain"></i> LangChain
+        </div>
+        <div class="technology tag other">
+            <i class="fab fa-stripe"></i> Stripe
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-key"></i> JWT Auth
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-shield-alt"></i> Zod Validation
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-globe"></i> i18n (EN/IT)
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-vector-square"></i> pgvector
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-mail-bulk"></i> Nodemailer
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <h3>Key Functionalities:</h3>
+    <ul>
+        <li>RAG-powered AI tutors with customizable behavior and knowledge sources</li>
+        <li>Multi-format document processing (PDF, DOCX, TXT, Markdown)</li>
+        <li>Audio transcription with OpenAI Whisper API (MP3, WAV, M4A, WebM)</li>
+        <li>Video processing with automatic audio extraction and transcription</li>
+        <li>Image OCR and analysis with GPT-4 Vision API</li>
+        <li>Vector similarity search with pgvector for intelligent document retrieval</li>
+        <li>AI Tutor Marketplace with ratings, reviews, and community sharing</li>
+        <li>Real-time cost tracking for all OpenAI API operations (embeddings, completions, transcriptions)</li>
+        <li>Stripe subscription management with multiple plans and billing portal</li>
+        <li>100% GDPR compliance with Privacy by Design architecture</li>
+        <li>Full internationalization (EN/IT) with next-intl</li>
+        <li>JWT authentication with role-based access control (user/admin/super_admin)</li>
+    </ul>
+
+    <img src="https://github.com/user-attachments/assets/4ef1ee93-d54d-4e56-bbc7-497a65598fdf" 
+        class="portfolio-details__img" alt="Dashboard" 
+    />
+    
+    <img src="https://github.com/user-attachments/assets/a9da38ba-af29-4b2c-b8ae-de27f629493d" 
+        class="portfolio-details__img" alt="Document Storage" 
+    />
+    
+    <h3>RAG-Powered AI Tutors</h3>
+    <p>
+        AI Knowledge Companion leverages <strong>Retrieval-Augmented Generation (RAG)</strong> to create intelligent tutors 
+        that answer questions based on your uploaded materials. The system automatically chunks documents, generates vector 
+        embeddings using OpenAI's text-embedding-3-small model, and performs semantic similarity search to retrieve the most 
+        relevant context for each query. Users can fine-tune RAG parameters including similarity threshold (0.0-1.0), maximum 
+        context chunks, and AI temperature to optimize responses for their specific use case.
+    </p>
+    <img src="https://github.com/user-attachments/assets/4c17a74a-d203-4425-a998-c2f967ab2248" 
+        class="portfolio-details__img" alt="AI Tutors" 
+    />
+    <img src="https://github.com/user-attachments/assets/870fc4cd-0d85-46c6-aa84-486b042ef1b0" 
+        class="portfolio-details__img" alt="Chat with Tutor" 
+    />
+    <img src="https://github.com/user-attachments/assets/9163ab2d-4003-4d81-b6e1-b465aea0d6a3" 
+        class="portfolio-details__img" alt="Tutor Configuration"
+    />
+    <br />
+
+    <h3>Multimedia Processing & Knowledge Base</h3>
+    <p>
+        The platform features <strong>advanced multimedia processing capabilities</strong> that transform any content type 
+        into searchable knowledge. Audio and video files are automatically transcribed using OpenAI Whisper API, images are 
+        analyzed with GPT-4 Vision for OCR and content extraction, and all processed content is chunked and embedded for 
+        optimal RAG retrieval. The system supports 10+ document formats and handles files up to 50MB with automatic cost 
+        calculation and quota management.
+    </p>
+    <img src="https://github.com/user-attachments/assets/68c84957-0fa2-460a-8b8e-56d618b2a18b" 
+        class="portfolio-details__img" alt="Multimedia Storage" 
+    />
+    <br />
+
+    <h3>Marketplace & Community Sharing</h3>
+    <p>
+        Share your AI tutors with the community through the integrated <strong>Marketplace</strong>. Users can publish tutors 
+        with different visibility levels (private, public, unlisted, marketplace), set pricing for premium tutors, and track 
+        downloads, ratings, and reviews. The marketplace features advanced search and filtering, tutor forking capabilities, 
+        and detailed analytics for tutor creators.
+    </p>
+    <img src="https://github.com/user-attachments/assets/d6f1a777-049b-47a2-9e9e-bbaaa713010e" 
+        class="portfolio-details__img" alt="Marketplace" 
+    />
+    <br />
+
+    <h3>Cost Tracking & Usage Analytics</h3>
+    <p>
+        Built with <strong>comprehensive cost tracking</strong> for all OpenAI API operations. The system automatically logs 
+        tokens used and estimated costs for chat completions, embeddings, transcriptions, and vision API calls. Users can 
+        monitor their usage in real-time through detailed dashboards showing API calls, tokens consumed, and costs per operation 
+        type. Admins have access to system-wide usage statistics and can manage user quotas based on subscription plans.
+    </p>
+    <img src="https://github.com/user-attachments/assets/317105b0-88e0-48f5-9819-55c85b297104" 
+        class="portfolio-details__img" alt="Usage & Billing" 
+    />
+    <br />
+
+    <h3>Subscription Management & Billing</h3>
+    <p>
+        Integrated <strong>Stripe subscription system</strong> with multiple plans (Pro €19/month, Enterprise €49/month) 
+        supporting both monthly and yearly billing cycles. The platform includes a complete billing portal for subscription 
+        management, automated webhook handling for real-time updates, and secure payment processing with restricted API keys 
+        following the principle of least privilege.
+    </p>
+    <img src="https://github.com/user-attachments/assets/932e9292-0ae4-49ea-8b6d-baf10567c525" 
+        class="portfolio-details__img" alt="Plans & Pricing" 
+    />
+    <img src="https://github.com/user-attachments/assets/b07f9d77-3106-4bbc-a275-aab973bd3068" 
+        class="portfolio-details__img" alt="Stripe Checkout"
+    />
+    <br />
+
+    <h3>GDPR Compliance & Security</h3>
+    <p>
+        Built with <strong>Privacy by Design</strong> principles, AI Knowledge Companion achieves 100% GDPR compliance through:
+    </p>
+    <ul>
+        <li>Comprehensive cookie consent management with granular preferences</li>
+        <li>Complete user data export and deletion capabilities (Art. 20 GDPR)</li>
+        <li>Row-Level Security (RLS) policies in Supabase for data isolation</li>
+        <li>Role-based access control with JWT authentication</li>
+        <li>Rate limiting with Redis for API protection</li>
+        <li>Security headers (CSP, X-Frame-Options, HSTS)</li>
+        <li>Sensitive log sanitization to prevent data leakage</li>
+        <li>Stripe integration with restricted keys for minimal attack surface</li>
+    </ul>
+    <img src="https://github.com/user-attachments/assets/276b2679-246e-4bf9-8673-70ed6a531a1b" 
+        class="portfolio-details__img" alt="Profile Settings" 
+    />
+    <br />
+
+    <h3>Internationalization & Accessibility</h3>
+    <p>
+        Full <strong>internationalization (i18n)</strong> support with next-intl providing seamless language switching between 
+        English and Italian. The platform follows WCAG 2.1 Level AA guidelines with proper semantic HTML, ARIA labels, keyboard 
+        navigation, and screen reader support. A comprehensive Help Center with FAQ and user manual is available in both languages, 
+        along with a contact form for user support.
+    </p>
+    <img src="https://github.com/user-attachments/assets/8167f7e9-5d32-4b23-9bdc-355204378411" 
+        class="portfolio-details__img" alt="Help Center" 
+    />
+    <br />
+</div>
