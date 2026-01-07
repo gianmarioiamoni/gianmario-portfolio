@@ -1,0 +1,313 @@
+<!-- Introduction -->
+<section class="portfolio-item__intro">
+    <div class="portfolio-item-intro__content">
+        <!-- Header -->
+        <div class="portfolio-item-intro__text">
+            <h1 class="portfolio-item__title--intro">
+                AI Knowledge Hub
+            </h1>
+            <p class="portfolio-item__subtitle--intro">Enterprise-grade multi-tenant RAG (Retrieval-Augmented Generation) platform for transforming company documentation into an AI-powered knowledge assistant. 
+            Features intelligent document ingestion, semantic search with pgvector, contextual Q&A, automatic SOP generation, and enterprise security with multi-tenant isolation.</p>
+            
+            <!-- Link to live site -->
+            <p class="portfolio-item-links">
+                <a href="https://ai-knowledge-hub-eosin.vercel.app" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fas fa-external-link-alt"></i> Visit Live Site
+                </a>
+                <a href="https://github.com/gianmarioiamoni/ai-knowledge-hub" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </p>
+            
+            <p class="portfolio-item-description">
+                AI Knowledge Hub is a production-ready SaaS platform that transforms company documentation into an intelligent 
+                knowledge assistant using advanced RAG (Retrieval-Augmented Generation) technology. Built with Next.js 15, 
+                TypeScript, Supabase, LangChain, and OpenAI GPT-4, it features a complete document ingestion pipeline with 
+                semantic chunking and vector embeddings, context-aware Q&A with source attribution, automatic SOP generation, 
+                and enterprise-grade security with Row-Level Security (RLS), role-based access control (RBAC), and Stripe-powered 
+                subscription management.
+            </p>
+        </div>
+        <!-- Image -->
+        <img src="https://github.com/user-attachments/assets/59ee0cbe-1e94-49a0-9618-e3dd335397b1" alt="AI Knowledge Hub"
+            class="portfolio-item-intro__img fade-in-image">
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="portfolio-item-individual">
+    <!-- Technologies -->
+    <section class="technologies">
+        <div class="technology tag framework">
+            <i class="fab fa-react"></i> Next.js 15
+        </div>
+        <div class="technology tag language">
+            <i class="fab fa-js-square"></i> TypeScript
+        </div>
+        <div class="technology tag framework">
+            <i class="fab fa-css3-alt"></i> Tailwind CSS
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> Supabase (PostgreSQL + pgvector)
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-robot"></i> OpenAI GPT-4.1
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-brain"></i> LangChain
+        </div>
+        <div class="technology tag other">
+            <i class="fab fa-stripe"></i> Stripe
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-key"></i> Supabase Auth
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-shield-alt"></i> Zod Validation
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-file-pdf"></i> PDF-lib
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-envelope"></i> Nodemailer
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-language"></i> next-intl (i18n)
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <h3>Key Functionalities:</h3>
+    <ul>
+        <li>Complete document ingestion pipeline with PDF upload, text extraction, semantic chunking (900 chars, 150 overlap)</li>
+        <li>Vector embeddings generation with OpenAI text-embedding-3-small (1536 dimensions)</li>
+        <li>PostgreSQL pgvector storage with IVFFlat indexing for fast approximate nearest neighbor search</li>
+        <li>RAG (Retrieval-Augmented Generation) chat with cosine similarity search and context injection</li>
+        <li>Streaming responses with NDJSON format for real-time token-by-token delivery</li>
+        <li>Context-aware Q&A with source attribution showing which document chunks informed each answer</li>
+        <li>Automatic SOP (Standard Operating Procedures) generation with structured output (purpose, steps, warnings, checklist)</li>
+        <li>SOP export to Markdown and PDF formats with custom formatting</li>
+        <li>Multi-tenant architecture with complete data isolation using Row-Level Security (RLS)</li>
+        <li>Role-Based Access Control (RBAC) with 4 permission levels (Viewer, Contributor, Company Admin, Super Admin)</li>
+        <li>Team management with email invitations, role assignment, and user suspension</li>
+        <li>Stripe subscription management with Trial, SMB, and Enterprise tiers (monthly/annual billing)</li>
+        <li>Automatic account disabling for expired subscriptions with email notifications</li>
+        <li>Full internationalization (English/Italian) with next-intl and server-side translation loading</li>
+        <li>Advanced search with Command Palette (Ctrl+K / Cmd+K) for fast navigation</li>
+        <li>Rate limiting for API protection (20 queries/min per user for chat)</li>
+        <li>Security headers (CSP, HSTS, X-Frame-Options) and CSRF protection</li>
+        <li>Comprehensive logging system with Sentry integration (optional)</li>
+        <li>Help Center with FAQ, user manuals, and contact form</li>
+    </ul>
+
+    <img src="https://github.com/user-attachments/assets/3ad697a4-7cc8-418f-8d5f-3230e944ed6d" 
+        class="portfolio-details__img" alt="Dashboard" 
+    />
+    
+    <img src="https://github.com/user-attachments/assets/6adfb87d-c45f-434b-b615-da64384afd42" 
+        class="portfolio-details__img" alt="Dashboard - Resource Usage" 
+    />
+
+    <h3>Document Ingestion Pipeline & Vector Search</h3>
+    <p>
+        The platform implements a sophisticated <strong>document ingestion pipeline</strong> that transforms unstructured 
+        PDFs into searchable vector embeddings. Documents are uploaded via drag-and-drop, stored in Supabase Storage, 
+        and processed through a multi-step pipeline: text extraction, intelligent semantic chunking using LangChain's 
+        RecursiveCharacterTextSplitter (900 character chunks with 150 character overlap to maintain context continuity), 
+        embedding generation with OpenAI's text-embedding-3-small model (1536 dimensions), and storage in PostgreSQL with 
+        the pgvector extension. The vector database uses IVFFlat indexing for O(log n) approximate nearest neighbor search, 
+        with cosine similarity scoring to find the most relevant document chunks for each query.
+    </p>
+    <img src="https://github.com/user-attachments/assets/b400ab74-9fa9-4285-b0e8-b7678478143c" 
+        class="portfolio-details__img" alt="Documents Management" 
+    />
+
+    <br />
+
+    <h3>RAG Chat & Contextual Q&A</h3>
+    <p>
+        The <strong>RAG (Retrieval-Augmented Generation) chat</strong> enables users to ask natural language questions 
+        and receive contextual answers based on their organization's documentation. The system embeds each query using the 
+        same embedding model as ingestion (ensuring consistency), performs a vector similarity search to retrieve the top 6 
+        most relevant document chunks (with a configurable similarity threshold of 0.75), constructs a context from retrieved 
+        chunks, and uses GPT-4.1-mini to generate answers with specialized prompt engineering. Responses are streamed 
+        token-by-token using NDJSON format for immediate user feedback. Each answer includes source attribution, showing 
+        which specific documents and chunks informed the response. Conversation history is maintained within sessions, 
+        allowing for contextual follow-up questions.
+    </p>
+    <img src="https://github.com/user-attachments/assets/f98971d4-5fbe-4dcd-a722-8e8cf519d115" 
+        class="portfolio-details__img" alt="RAG Chat Interface" 
+    />
+
+    <br />
+
+    <h3>SOP Generation & Export</h3>
+    <p>
+        The platform can <strong>automatically generate Standard Operating Procedures (SOPs)</strong> from company documentation 
+        using specialized AI prompting. Users specify a title, scope, and context, and the system leverages the same RAG 
+        infrastructure to retrieve relevant chunks, then uses GPT-4.1 (full model for complex reasoning) with a specialized 
+        template to generate structured SOPs. The output includes: purpose and scope section, prerequisites checklist, 
+        numbered step-by-step instructions, safety warnings and notes, and post-completion checklist. Generated SOPs can be 
+        edited, regenerated, or exported to Markdown or PDF formats with custom formatting using pdf-lib.
+    </p>
+    <img src="https://github.com/user-attachments/assets/c9328d61-bc99-473f-aa59-3e8fbacc1fca" 
+        class="portfolio-details__img" alt="Procedures List" 
+    />
+    <img src="https://github.com/user-attachments/assets/c16316ca-5b61-4c33-9a95-8eba16fe4121" 
+        class="portfolio-details__img" alt="Generate New Procedure" 
+    />
+    <img src="https://github.com/user-attachments/assets/ddf7e429-c8dc-4706-b681-b355f02ddc70" 
+        class="portfolio-details__img" alt="View Procedure Details" 
+    />
+
+    <br />
+
+    <h3>Multi-Tenant Architecture & Security</h3>
+    <p>
+        Built with <strong>enterprise-grade security</strong> and true multi-tenancy using Supabase Row-Level Security (RLS). 
+        Every database table has RLS policies that enforce organization-level data isolation at the database layer, ensuring 
+        users can only access data belonging to their organization. The platform implements a 4-tier Role-Based Access Control 
+        (RBAC) system: Viewer (read-only access), Contributor (can upload docs and generate SOPs), Company Admin (full team 
+        management, billing, and user invitations), and Super Admin (platform oversight with access to all organizations, 
+        system-wide statistics, and monitoring). Permissions are enforced at three levels: UI (hide features based on role), 
+        API (server-side validation in route handlers), and Database (RLS policies with role column checks).
+    </p>
+
+    <br />
+
+    <h3>Team Management & Invitations</h3>
+    <p>
+        Company Admins can <strong>manage their team</strong> through a comprehensive admin interface. The invitation system 
+        allows sending email invitations with pre-assigned roles, tracking invitation status (pending, accepted, expired, revoked), 
+        and automatically creating user accounts when invitations are accepted. Admins can change user roles, suspend or enable 
+        users, view detailed user activity, and perform bulk operations like deleting all pending invitations. The system tracks 
+        invitation expiration (7 days) and provides clear feedback on invitation status.
+    </p>
+    <img src="https://github.com/user-attachments/assets/fed66e21-0fff-4d78-8b4a-7758ecac4f5d" 
+        class="portfolio-details__img" alt="Company Admin - User Management" 
+    />
+
+    <br />
+
+    <h3>Super Admin Platform Monitoring</h3>
+    <p>
+        The <strong>Super Admin dashboard</strong> provides comprehensive platform oversight with real-time statistics and 
+        analytics. Features include: total users, organizations, documents, conversations, and procedures; plan distribution 
+        showing users across Trial, SMB, and Enterprise tiers; user growth visualization over the last 30 days; top 10 
+        organizations ranked by activity (members, documents, chats, SOPs); engagement metrics (active users per day/week/month, 
+        avg conversations per user, avg documents per organization); document ingestion status tracking; and time-series charts 
+        for documents uploaded and chat activity over time. All data is filtered by organization using RLS, and Super Admins 
+        have visibility across all tenants for monitoring and support purposes.
+    </p>
+    <img src="https://github.com/user-attachments/assets/20f661fd-dd1e-4acb-aaaf-b3bf8b7683e2" 
+        class="portfolio-details__img" alt="Super Admin Dashboard" 
+    />
+    <img src="https://github.com/user-attachments/assets/9c5d7c7e-9292-4c30-b2ff-3c76c9c42335" 
+        class="portfolio-details__img" alt="Super Admin Stats - Plan Distribution & Growth" 
+    />
+    <img src="https://github.com/user-attachments/assets/bafb9816-ec86-4922-8be8-dd96607fc753" 
+        class="portfolio-details__img" alt="Super Admin Stats - Top Organizations & Engagement" 
+    />
+
+    <br />
+
+    <h3>Subscription Management & Billing</h3>
+    <p>
+        Integrated <strong>Stripe subscription system</strong> with three plans: Trial (14 days free, 5 documents, 50 chats/month, 
+        2 SOPs, 2 contributors, 1 viewer), SMB (€19.90/month or €199/year, 50 docs, 500 chats/month, 20 SOPs, 10 contributors, 
+        5 viewers), and Enterprise (€49.90/month or €499/year, unlimited resources). The platform includes automatic account 
+        disabling for expired subscriptions, email notifications for trial expirations and deactivations, webhook handling for 
+        subscription lifecycle events (created, updated, deleted), and a complete billing portal for subscription management. 
+        Subscription status is verified at login and through automated cron jobs, ensuring users with expired subscriptions 
+        are immediately disabled. Company Admins can upgrade, downgrade, or cancel subscriptions directly from their profile.
+    </p>
+    <img src="https://github.com/user-attachments/assets/64eed8dc-dc07-49f2-8c65-81599d7ae64a" 
+        class="portfolio-details__img" alt="Plans & Pricing" 
+    />
+
+    <br />
+
+    <h3>Internationalization & User Experience</h3>
+    <p>
+        Full <strong>internationalization (i18n)</strong> support with English and Italian languages using next-intl. All UI 
+        elements, messages, errors, and emails are fully translated. The platform features a responsive design that adapts to 
+        mobile, tablet, and desktop viewports. Navigation is context-aware: desktop users (≥1024px) see a traditional TopNav 
+        with all menu items, while mobile users (<1024px) access features through a Command Palette (Ctrl+K / Cmd+K). The 
+        Command Palette provides fast keyboard-driven navigation, filtered by user role, with search functionality for quick 
+        access to any feature. Language switching is seamless and persists across sessions.
+    </p>
+    <img src="https://github.com/user-attachments/assets/2376c6d7-0110-4f2f-b66e-6e856b442016" 
+        class="portfolio-details__img" alt="Multilanguage Support" 
+    />
+    <img src="https://github.com/user-attachments/assets/ca51c18f-2494-4a5e-a8a8-d163c95a5242" 
+        class="portfolio-details__img" alt="Command Palette Search" 
+    />
+
+    <br />
+
+    <h3>Help Center & Documentation</h3>
+    <p>
+        Comprehensive <strong>Help Center</strong> with FAQ sections covering common questions about the platform, documents, 
+        chat, procedures, team management, and troubleshooting. The help system includes quick info cards for each major feature, 
+        detailed user manuals in both English and Italian (accessible as PDFs), and a contact form for user support allowing 
+        users to submit questions, report bugs, or request new features. All help content is internationalized and accessible 
+        from any page via the main navigation or Command Palette.
+    </p>
+    <img src="https://github.com/user-attachments/assets/ddcc70e5-2e83-459c-83f9-5cc91521cf58" 
+        class="portfolio-details__img" alt="Help Center" 
+    />
+
+    <br />
+
+    <h3>AI Implementation & Performance</h3>
+    <p>
+        The platform's <strong>AI architecture</strong> is optimized for cost and performance. Document embeddings use 
+        text-embedding-3-small ($0.02/1M tokens) for cost-effectiveness. RAG chat uses GPT-4.1-mini, which is 10x cheaper 
+        than GPT-4 and sufficient for factual Q&A. SOP generation uses full GPT-4.1 for complex reasoning and structured 
+        output generation. The vector search SQL function uses PostgreSQL's pgvector extension with the cosine distance 
+        operator (<=>), indexed with IVFFlat for O(log n) search performance. Typical latencies: query embedding 50-100ms, 
+        vector search 100-200ms, LLM first token 500-800ms, full answer 2-4s. Rate limiting prevents abuse (20 chat 
+        queries/min per user), and streaming responses provide immediate user feedback with progressive rendering.
+    </p>
+
+    <br />
+
+    <h3>Security & Compliance</h3>
+    <p>
+        Built with <strong>enterprise-grade security</strong> features including:
+    </p>
+    <ul>
+        <li>Row-Level Security (RLS) in PostgreSQL for database-level multi-tenant data isolation</li>
+        <li>Role-Based Access Control (RBAC) enforced at UI, API, and database layers</li>
+        <li>Rate limiting with in-memory store for API protection against abuse</li>
+        <li>Security headers (CSP, HSTS, X-Frame-Options, X-Content-Type-Options) for enhanced protection</li>
+        <li>Input validation and sanitization with Zod schema validation for all API endpoints</li>
+        <li>CSRF protection with secure token generation for form submissions</li>
+        <li>Encrypted file storage in Supabase for sensitive documents</li>
+        <li>Environment variable validation at startup with Zod schemas</li>
+        <li>Error sanitization to prevent sensitive information leakage in production</li>
+        <li>Multi-provider authentication (email/password and Google OAuth) via Supabase Auth</li>
+        <li>Automatic session management with secure HTTP-only cookies</li>
+        <li>Optional Sentry integration for error tracking and monitoring</li>
+    </ul>
+
+    <br />
+
+    <h3>Code Quality & Architecture</h3>
+    <p>
+        The codebase follows <strong>SOLID principles</strong> and clean architecture patterns. Built with TypeScript in 
+        strict mode (no implicit `any` allowed), functional programming patterns throughout (no classes), and React Server 
+        Components (RSC) first architecture with minimal client-side JavaScript (60% CSR / 40% SSR ratio optimized after 
+        thorough analysis). The project uses modular folder structure with clear separation of concerns: server-only utilities 
+        in `lib/server/`, UI components in `components/`, internationalized routes in `app/[locale]/`, and database migrations 
+        in `supabase/migrations/`. All environment variables are validated with Zod schemas at startup, ensuring fast-fail 
+        behavior for misconfigurations. The codebase includes comprehensive JSDoc comments for complex functions and maintains 
+        consistent naming conventions throughout.
+    </p>
+
+    <br />
+
+</div>
+
