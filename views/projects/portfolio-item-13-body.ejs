@@ -1,0 +1,384 @@
+<!-- Introduction -->
+<section class="portfolio-item__intro">
+    <div class="portfolio-item-intro__content">
+        <!-- Header -->
+        <div class="portfolio-item-intro__text">
+            <h1 class="portfolio-item__title--intro">
+                Tech Explanation Service
+            </h1>
+            <p class="portfolio-item__subtitle--intro">Production-ready AI service that generates clear, structured technical explanations using advanced LangChain LCEL, OpenAI GPT-4o-mini, and Conditional RAG (Retrieval-Augmented Generation). 
+            Features real-time streaming, intelligent context switching, persistent chat history, smart quota management, and multi-format export capabilities.</p>
+            
+            <!-- Link to live site -->
+            <p class="portfolio-item-links">
+                <a href="https://huggingface.co/spaces/gianmarioiamoni67/tech-explanation-service" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fas fa-external-link-alt"></i> Visit Live Demo
+                </a>
+                <a href="https://github.com/gianmarioiamoni/tech-explanation-service-langchain" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </p>
+            
+            <p class="portfolio-item-description">
+                Tech Explanation Service is a sophisticated AI application that transforms complex technical concepts into 
+                clear, accessible explanations. Built with Python 3.11, LangChain LCEL, Gradio 6.3, and OpenAI GPT-4o-mini, 
+                it implements conditional RAG patterns that intelligently switch between uploaded documentation and general 
+                knowledge based on relevance. The platform features real-time token-by-token streaming with LCEL, persistent 
+                chat history on Hugging Face Hub, advanced history management with date grouping and search, multi-topic batch 
+                processing with flexible aggregation modes, multi-format export (Markdown, PDF, DOCX), and enterprise-grade 
+                quota management with SQLite persistence and real-time visual tracking. The codebase follows clean architecture 
+                principles with domain-driven design, comprehensive testing (60+ tests with >80% coverage), and strict type 
+                safety throughout.
+            </p>
+        </div>
+        <!-- Image -->
+        <img src="/img/portfolio-13-intro.png" alt="Tech Explanation Service"
+            class="portfolio-item-intro__img fade-in-image">
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="portfolio-item-individual">
+    <!-- Technologies -->
+    <section class="technologies">
+        <div class="technology tag language">
+            <i class="fab fa-python"></i> Python 3.11
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-link"></i> LangChain LCEL
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-robot"></i> OpenAI GPT-4o-mini
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-window-maximize"></i> Gradio 6.3
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> ChromaDB
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> SQLite
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-cloud"></i> Hugging Face Hub
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-brain"></i> OpenAI Embeddings
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-calculator"></i> tiktoken
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-check-circle"></i> Pydantic
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-file-pdf"></i> ReportLab
+        </div>
+        <div class="technology tag other">
+            <i class="fab fa-markdown"></i> python-docx
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <h3>Key Functionalities:</h3>
+    <ul>
+        <li>Conditional RAG (Hybrid AI) with intelligent context switching between uploaded documents and general LLM knowledge</li>
+        <li>Relevance-based document retrieval using ChromaDB vector search with cosine similarity threshold (1.5)</li>
+        <li>Real-time streaming with LangChain LCEL providing progressive token-by-token output</li>
+        <li>Stop control for interrupting generation mid-stream with dedicated button</li>
+        <li>Persistent chat history on Hugging Face Hub with automatic save and restore</li>
+        <li>Advanced history management with date grouping (newest first), full-text search, and selective deletion</li>
+        <li>Multi-topic batch processing with comma-separated input handling</li>
+        <li>Flexible aggregation modes: combine all topics into one chat or save separately</li>
+        <li>Multi-format export to Markdown, PDF (ReportLab), and Word (DOCX) with professional formatting</li>
+        <li>Smart quota management with SQLite persistence tracking daily limits (20 requests, 10,000 tokens/day)</li>
+        <li>Real-time quota visualization with color-coded progress bars (🟢🟡🔴)</li>
+        <li>Automatic input validation and truncation to max 300 tokens with user warnings</li>
+        <li>Accurate token counting with tiktoken for cost tracking and OpenAI billing</li>
+        <li>Document ingestion pipeline for PDF, DOCX, TXT, and Markdown files</li>
+        <li>Semantic chunking with RecursiveCharacterTextSplitter (500 chars, 50 overlap)</li>
+        <li>Vector embeddings with OpenAI text-embedding-3-small stored in ChromaDB</li>
+        <li>Vectorstore persistence on Hugging Face Hub as compressed tar.gz archives</li>
+        <li>Clean architecture with domain-driven design (explanation, history, RAG, quota domains)</li>
+        <li>Comprehensive testing with 60+ tests achieving >80% code coverage</li>
+        <li>Type safety with strict Python type hints throughout the codebase</li>
+    </ul>
+
+    <img src="https://github.com/user-attachments/assets/05a8cc51-badf-40fe-a915-023e8c8feddb" 
+        class="portfolio-details__img" alt="RAG-Based Answer" 
+    />
+
+    <h3>Conditional RAG Implementation</h3>
+    <p>
+        The platform implements <strong>Conditional RAG (Hybrid AI)</strong>, an intelligent pattern that dynamically chooses 
+        the best generation strategy based on context availability and relevance. When a user asks a question, the system first 
+        checks if any documents have been uploaded. If no documents exist, it immediately falls back to the generic LLM for a 
+        general answer. If documents are available, the system performs semantic search using ChromaDB vector database, retrieves 
+        the top 5 most relevant chunks with their cosine distance scores, and evaluates relevance using a threshold of 1.5. 
+        Chunks with distance < 1.5 are considered highly relevant and trigger RAG mode, where the retrieved context is injected 
+        into the LLM prompt along with source attribution. Chunks with distance ≥ 1.5 are deemed irrelevant, causing the system 
+        to fall back to generic LLM mode. This ensures users always receive valuable answers—either grounded in their specific 
+        documentation or leveraging the model's general knowledge—eliminating frustrating "I don't know" responses.
+    </p>
+
+    <p>
+        The RAG pipeline uses <strong>OpenAI text-embedding-3-small</strong> (1536 dimensions) for both document ingestion and 
+        query encoding, ensuring consistency in the vector space. Documents are chunked using LangChain's RecursiveCharacterTextSplitter 
+        with 500 character chunks and 50 character overlap to maintain context continuity across boundaries. The ChromaDB vectorstore 
+        is persisted on Hugging Face Hub as compressed tar.gz archives, automatically downloaded at startup and re-uploaded after 
+        document additions, ensuring stateless deployment compatibility. Visual feedback is provided through badges: 🧠 "Answer 
+        generated using your documents" for RAG mode, 🌐 "Answer generated using general knowledge" for generic LLM, and 🔀 for 
+        mixed mode when processing multiple topics.
+    </p>
+
+    <br />
+
+    <h3>Real-Time Streaming with LangChain LCEL</h3>
+    <p>
+        The platform leverages <strong>LangChain Expression Language (LCEL)</strong> for efficient real-time streaming of LLM 
+        responses. LCEL chains are composed using the pipe operator (|) to create processing pipelines: prompt template → LLM → 
+        output parser. The streaming implementation yields tokens progressively as they are generated by the OpenAI model, providing 
+        immediate visual feedback to users. Streaming status is indicated with a "⏳ Generating explanation..." badge during generation, 
+        which is replaced with a final badge (🧠/🌐/🔀) when complete. Token consumption metrics are tracked in real-time and 
+        displayed after each response: total tokens used (input + output), broken down by input tokens and output tokens.
+    </p>
+
+    <p>
+        The streaming architecture includes <strong>cancellation support</strong> with a dedicated stop button that becomes 
+        enabled during generation. Clicking stop immediately halts the LLM stream using Gradio's queue.cancels mechanism, 
+        preventing unnecessary token consumption. The stop button is visually distinct, automatically disabled after generation 
+        completes, and integrated with the queue system for reliable cancellation. All streaming events are wired through modular 
+        event handlers in ui/events/explanation_events.py, which coordinate button states, streaming callbacks, and quota updates 
+        using Gradio's .then() chaining pattern for sequential operations.
+    </p>
+
+    <br />
+
+    <h3>Advanced History Management</h3>
+    <p>
+        Chat history is <strong>persistently stored on Hugging Face Hub</strong> as JSON files, providing stateless storage that 
+        survives application restarts and redeploys. Each chat entry includes topic, explanation, and ISO timestamp, enabling 
+        sophisticated organization and retrieval. The history UI features smart date grouping with chats organized by creation 
+        day (newest first), displayed as hierarchical dropdowns with date headers (📅 DD/MM/YYYY) followed by indented chat titles. 
+        Users can select individual chats to load them into the output area or click on a date header to view all chats from 
+        that day sequentially with visual separators.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/659e3b89-57f9-4ce8-8cef-7c2714bb0469" 
+        class="portfolio-details__img" alt="Chat History" 
+    />
+
+    <p>
+        <strong>Full-text search</strong> functionality allows users to filter chats by typing keywords, instantly narrowing down 
+        the dropdown to matching entries (searches in both topic and content). The history system also provides selective deletion: 
+        users can choose a specific chat from a separate delete dropdown and remove it with a confirmation, or use the "Clear all 
+        chats" button with a 🗑️ icon to wipe the entire history. Dynamic info messages update in real-time: "📭 No chats saved" 
+        when empty, "💬 1 available chat" for single entries, or "💬 N available chats" with count. The history state is managed 
+        as a Gradio State object, and updates trigger automatic recalculation of dropdown choices, info messages, and delete options 
+        using domain services (HistoryFormatter, HistoryRepository) for clean separation of concerns.
+    </p>
+
+    <br />
+
+    <h3>Multi-Topic Processing</h3>
+    <p>
+        The platform supports <strong>batch explanation requests</strong> where users can input multiple topics separated by commas 
+        (e.g., "Python, JavaScript, React"). The input is parsed into individual topics using output_formatter.parse_topics(), which 
+        handles comma separation, whitespace trimming, and empty string filtering. Users control how multi-topic results are stored 
+        via a radio button: "Aggregate into one chat" combines all explanations into a single history entry with the topic stored 
+        as "Python, JavaScript, React" (comma-separated), while "Save each topic as a separate chat" creates individual history 
+        entries for "Python", "JavaScript", and "React" respectively.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/bbf3c188-1748-430b-a9d4-26ac747df361" 
+        class="portfolio-details__img" alt="Multiple Topics in One Chat" 
+    />
+
+    <p>
+        During generation, each topic is processed sequentially through the RAG service, with streaming output shown in real-time. 
+        In aggregate mode, the final output uses <strong>visual separators</strong> (─── Topic Name ───) between sections for 
+        clarity. The aggregate_topics_output formatter handles combining multiple topic results with proper spacing and dividers. 
+        In separate mode, each topic receives its own complete output with badges, warnings, and token metrics. The multi-topic 
+        flow respects quota limits per-topic: input validation runs for each topic individually, and token consumption is tracked 
+        and logged separately before being summed for the final quota update. This ensures accurate billing and prevents quota 
+        bypass through batching.
+    </p>
+
+    <br />
+
+    <h3>Multi-Format Export</h3>
+    <p>
+        Generated explanations can be <strong>exported in three professional formats</strong>: Markdown (.md), PDF, and Word (.docx). 
+        The export system is triggered via a download button that opens an accordion menu with format-specific buttons (📄 Markdown, 
+        📕 PDF, 📘 Word). Each format has a dedicated exporter in ui/utils/document_exporter.py that handles content formatting, 
+        typography, and file generation. Markdown export uses UTF-8 encoding and preserves the full explanation with headers, bullet 
+        points, and code blocks intact. PDF export uses <strong>ReportLab</strong> for professional layout with custom fonts (Helvetica), 
+        proper spacing, bullet point handling, and Unicode support for technical symbols. Word export uses <strong>python-docx</strong> 
+        to create .docx files with heading styles, paragraph formatting, and bullet lists.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/f88caef5-e399-4cc0-8278-955795c9517f" 
+        class="portfolio-details__img" alt="Download Options" 
+    />
+
+    <p>
+        The export flow is carefully designed to <strong>prevent UI pollution</strong>. The download accordion is initially hidden 
+        and only appears when enabled after a successful explanation generation. When a format button is clicked, the file is generated 
+        server-side, returned via Gradio's gr.File component, and the accordion is immediately hidden again to prevent multiple file 
+        upload areas from appearing. The clear button resets the download state and hides the accordion. All format buttons are wired 
+        through ui/events/download_events.py with consistent visibility management and file clearing after each download to avoid 
+        lingering UI elements.
+    </p>
+
+    <br />
+
+    <h3>Smart Quota Management</h3>
+    <p>
+        The platform implements <strong>enterprise-grade quota management</strong> to control costs and prevent abuse. Each user 
+        (in this shared demo: "shared_demo") has daily limits of 20 requests and 10,000 tokens that reset at midnight UTC. Quota 
+        state is persisted in a SQLite database (./data/quota.db) with three tables: users (tracks user metadata and cumulative totals), 
+        daily_quota (stores current day's usage with date key for automatic reset logic), and request_log (detailed audit trail with 
+        timestamp, topic, RAG usage flag, input/output tokens, success status, and optional error messages).
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/f889d035-b4c7-451d-b21b-6de976ead005" 
+        class="portfolio-details__img" alt="Quota Status" 
+    />
+
+    <p>
+        <strong>Input validation</strong> occurs before LLM invocation: the input_validator.validate_and_prepare() method counts 
+        tokens using tiktoken, compares against the max_input_tokens limit (300), and either accepts the input, truncates it with 
+        a warning, or rejects it outright if truncation is disabled. The rate_limiter.check_and_reserve_quota() method verifies 
+        that both request count and estimated token budget (input + max_output_tokens) are available before proceeding. If quota 
+        is exceeded, a QuotaExceededError is raised with a detailed message showing current usage and reset time, displayed to 
+        the user as an error badge in the output box.
+    </p>
+
+    <p>
+        After successful generation, <strong>actual consumption is logged</strong> via rate_limiter.consume_quota(), which records 
+        the exact input and output tokens (counted from the LLM response), increments daily_quota counters, updates user totals, 
+        and creates a request_log entry for auditing. The quota display is then refreshed to show updated progress bars. Quota 
+        status is visualized with <strong>color-coded progress bars</strong>: 🟢 green blocks for normal usage (<80%), 🟡 yellow 
+        for warning level (80-100%), 🔴 red for exhausted/over-limit. The UI shows "✅ Quota Available", "⚠️ Warning: High Usage", 
+        or "🚫 QUOTA EXHAUSTED" with appropriate styling. The format_quota_status formatter generates rich HTML with gradients, 
+        icons, and percentage displays for an intuitive user experience.
+    </p>
+
+    <br />
+
+    <h3>Clean Architecture & Domain-Driven Design</h3>
+    <p>
+        The codebase follows <strong>SOLID principles</strong> with strict separation of concerns. Services are organized by 
+        domain in app/services/: explanation/ (output formatting, sanitization), history/ (repository, formatter, loader), rag/ 
+        (indexer, retriever, chains), and quota/ (rate limiter, token counter, input validator). Each domain has focused 
+        responsibilities: the explanation domain handles LLM output transformation and multi-topic aggregation; the history domain 
+        manages CRUD operations, date grouping, and search; the RAG domain orchestrates document ingestion, vector search, and 
+        conditional chain selection; and the quota domain enforces limits, tracks usage, and provides validation.
+    </p>
+
+    <p>
+        The UI layer is equally modular, split into components/ (reusable Gradio widgets), callbacks/ (business logic invocation), 
+        events/ (event wiring and state management), and utils/ (UI helpers, document exporters, message constants). Callbacks 
+        act as thin adapters that coordinate domain services and return Gradio updates, ensuring UI code doesn't contain business 
+        logic. Event modules wire Gradio components to callbacks using .click(), .submit(), .change(), and .then() chains, handling 
+        complex interaction flows like streaming → dropdown refresh → button state updates. The main ui/gradio_app.py file is a 
+        pure composition of components and event wiring, with zero business logic.
+    </p>
+
+    <p>
+        <strong>Type safety</strong> is enforced throughout with Python type hints (List, Dict, Tuple, Optional), Pydantic models 
+        for structured data (QuotaStatus, ValidationResult, RequestLog), and strict mypy-compatible typing. All public functions 
+        have docstrings with Args/Returns sections. The project avoids classes in favor of functional patterns, with stateless 
+        service modules exposing pure functions and minimal shared state (singletons like rate_limiter and rag_service for 
+        resource management). This functional approach improves testability and reduces cognitive load.
+    </p>
+
+    <br />
+
+    <h3>Comprehensive Testing & Quality</h3>
+    <p>
+        The test suite includes <strong>60+ tests</strong> organized by domain, achieving >80% code coverage. Test categories 
+        include: database layer tests (5) verifying SQLite schema, CRUD operations, and constraint handling; token counter tests 
+        (9) validating tiktoken integration, edge cases, and encoding; rate limiter tests (11) checking quota enforcement, daily 
+        reset logic, and overflow protection; authentication tests (15) covering session management and user identification; input 
+        validator tests (11) ensuring truncation, warnings, and rejection logic; and quota-aware LLM tests (9) verifying end-to-end 
+        quota integration with explanation generation.
+    </p>
+
+    <p>
+        Service integration tests validate the interaction between domains: explanation service tests confirm multi-topic processing, 
+        output formatting, and badge generation; RAG service tests ensure conditional switching, relevance scoring, and vectorstore 
+        operations; and history service tests verify persistence, date grouping, search, and deletion. The test suite uses pytest 
+        with fixtures for database setup/teardown, mocked LLM responses to avoid API costs, and parameterized tests for edge case 
+        coverage. Tests follow the Arrange-Act-Assert pattern with clear naming (test_rate_limiter_exceeds_request_limit) and 
+        isolated concerns to prevent cascading failures.
+    </p>
+
+    <br />
+
+    <h3>AI Performance & Cost Optimization</h3>
+    <p>
+        The platform's <strong>AI architecture</strong> balances quality and cost. Embeddings use text-embedding-3-small ($0.02/1M 
+        tokens), which is cost-effective while providing sufficient semantic understanding for technical documentation. LLM generation 
+        uses GPT-4o-mini, which costs ~15x less than GPT-4 ($0.15/1M input, $0.60/1M output) while maintaining high quality for 
+        factual technical explanations. The model is configured with temperature=0.2 for consistency, max_tokens=500 for output 
+        control, and streaming=True for real-time feedback.
+    </p>
+
+    <p>
+        <strong>Typical latencies</strong> for a standard request: query embedding 50-100ms, vector search with ChromaDB 100-200ms 
+        (using IVFFlat indexing if available), LLM first token 500-800ms (depends on prompt complexity and OpenAI API load), full 
+        explanation 2-4s for ~300 tokens. RAG mode adds minimal overhead (~200ms) for retrieval and context injection. The platform's 
+        quota limits effectively control costs: with 20 requests and 10,000 tokens per user per day, maximum daily cost per user 
+        is ~$0.30. Realistic usage (50% of quota, averaging 200 output tokens per request) yields ~$0.15/user/day. For 100 active 
+        users with 50% utilization, monthly cost is ~$450—significantly lower than GPT-4-based solutions.
+    </p>
+
+    <br />
+
+    <h3>Deployment & Infrastructure</h3>
+    <p>
+        The platform is deployed on <strong>Hugging Face Spaces</strong> with automatic build and deploy on git push. The spaces_app.py 
+        entrypoint launches the Gradio application with proper configuration for the Spaces environment (port 7860, 0.0.0.0 binding). 
+        Required secrets are configured in Space settings: OPENAI_API_KEY for LLM and embeddings, HF_TOKEN with write permissions 
+        for Hub storage (history.json, rag_documents.json, chroma_db.tar.gz). The SQLite database is stored in ./data/quota.db, 
+        which persists across app restarts due to Spaces' /data directory persistence.
+    </p>
+
+    <p>
+        The <strong>stateless architecture</strong> handles ephemeral storage by offloading persistent data to Hugging Face Hub. 
+        On startup, the app downloads history.json (chat history), rag_documents.json (document registry), and chroma_db.tar.gz 
+        (compressed vectorstore), extracts the vectorstore locally, and initializes the ChromaDB client. After document ingestion 
+        or history updates, the modified files are re-uploaded to the Hub. This approach enables true stateless deployment, horizontal 
+        scaling potential, and automatic recovery from container restarts without data loss. The compressed tar.gz format reduces 
+        storage costs and transfer times for the vectorstore.
+    </p>
+
+    <br />
+
+    <h3>Code Quality & Maintainability</h3>
+    <p>
+        The project demonstrates <strong>professional engineering practices</strong> throughout. All Python code uses strict type 
+        hints with no implicit `any` types, enforced by mypy-compatible annotations. Functions have comprehensive docstrings with 
+        Args, Returns, and Raises sections. The codebase uses consistent naming conventions: snake_case for functions/variables, 
+        PascalCase for classes (though classes are minimized in favor of functional patterns), UPPER_CASE for constants. Comments 
+        explain "why" not "what", focusing on non-obvious logic, architectural decisions, and workaround rationale (e.g., Gradio 6.3 
+        streaming bugs).
+    </p>
+
+    <p>
+        <strong>Modular design</strong> ensures easy extension and maintenance. Adding a new export format requires only creating 
+        a new method in document_exporter.py and wiring a button in download_events.py. Implementing additional RAG strategies 
+        (map-reduce, refine) involves adding chain variants in rag_chains_lcel.py and updating the service selector. The domain 
+        structure isolates changes: modifying history storage (e.g., switching from JSON to PostgreSQL) only affects history/repository.py, 
+        with no impact on UI or other services. This modularity, combined with comprehensive tests, enables confident refactoring 
+        and feature addition without regression risks.
+    </p>
+
+    <br />
+
+</div>
+
+
