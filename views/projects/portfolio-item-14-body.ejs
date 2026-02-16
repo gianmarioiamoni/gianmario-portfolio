@@ -1,0 +1,193 @@
+<!-- Introduction -->
+<section class="portfolio-item__intro">
+    <div class="portfolio-item-intro__content">
+        <!-- Header -->
+        <div class="portfolio-item-intro__text">
+            <h1 class="portfolio-item__title--intro">
+                AI Decision Agent
+            </h1>
+            <p class="portfolio-item__subtitle--intro">
+                Enterprise-grade AI Decision Support System built with LangGraph state orchestration, Authoritative RAG,
+                Historical Decision Modeling, Deterministic Confidence Scoring, and Cost Governance controls.
+                Designed as a structured decision engine — not a chatbot.
+            </p>
+
+            <!-- Link to live site -->
+            <p class="portfolio-item-links">
+                <a href="https://huggingface.co/spaces/gianmarioiamoni67/ai-decision-agent" target="_blank"
+                    rel="noopener noreferrer" class="btn">
+                    <i class="fas fa-external-link-alt"></i> Visit Live Demo
+                </a>
+                <a href="https://github.com/gianmarioiamoni/ai-decision-agent/" target="_blank"
+                    rel="noopener noreferrer" class="btn btn--secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </p>
+
+            <p class="portfolio-item-description">
+                AI Decision Agent is a production-oriented AI governance prototype designed to support structured
+                decision-making
+                in enterprise-like environments. Built with Python 3.11, LangGraph, LangChain, OpenAI models, and
+                ChromaDB,
+                it implements a deterministic multi-stage workflow (Intake → RAG → Historical Retrieval → Analyzer →
+                Planner → Decision → Confidence → Report).
+                The system separates reasoning layers to reduce bias, integrates authoritative organizational documents
+                via RAG,
+                models historical influence through semantic similarity, computes confidence deterministically outside
+                the LLM,
+                and enforces strict token budget governance for public cloud deployment on Hugging Face Spaces.
+            </p>
+        </div>
+        <!-- Image -->
+        <img src="https://github.com/user-attachments/assets/acfba513-7b87-4abf-8186-7b10b07cdae0"
+            alt="AI Decision Agent Homepage" class="portfolio-item-intro__img fade-in-image">
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="portfolio-item-individual">
+
+    <!-- Technologies -->
+    <section class="technologies">
+        <div class="technology tag language">
+            <i class="fab fa-python"></i> Python 3.11
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-project-diagram"></i> LangGraph
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-link"></i> LangChain
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-robot"></i> OpenAI GPT-4o-mini
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> ChromaDB
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-window-maximize"></i> Gradio 6.3
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> SQLite
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-cloud"></i> Hugging Face Spaces
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-file-pdf"></i> WeasyPrint
+        </div>
+        <div class="technology tag other">
+            <i class="fab fa-markdown"></i> python-docx
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-vial"></i> Pytest
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <h3>Key Functionalities:</h3>
+    <ul>
+        <li>Multi-stage decision workflow orchestrated via LangGraph state machine</li>
+        <li>Authoritative RAG integration with semantic retrieval using ChromaDB</li>
+        <li>Explicit separation between authoritative context and historical decisions</li>
+        <li>Independent Analyzer and Planner nodes to reduce confirmation bias</li>
+        <li>Deterministic confidence modeling (base, historical influence, final score)</li>
+        <li>Historical decision similarity retrieval with influence factor calculation</li>
+        <li>Retry logic triggered by low-confidence thresholds</li>
+        <li>Structured HTML session report with decision traceability</li>
+        <li>PDF and DOCX export for audit-ready documentation</li>
+        <li>Token Budget Manager with session and daily hard limits</li>
+        <li>Token usage transparency and quota enforcement</li>
+        <li>Node-level logging decorator for traceable execution</li>
+        <li>Deterministic non-streaming graph execution separated from UI streaming</li>
+        <li>Public cloud deployment with abuse protection on Hugging Face Spaces</li>
+        <li>Strong separation of concerns across UI, Graph, Domain, RAG, Infrastructure</li>
+        <li>Comprehensive testing (unit + graph-level scenarios)</li>
+        <li>Strict type hints and structured state validation</li>
+    </ul>
+
+    <img src="https://github.com/user-attachments/assets/b94f61a6-9166-4223-9ea9-582e875fee0b"
+        class="portfolio-details__img" alt="Planning and Analysis" />
+
+    <h3>Multi-Stage Decision Workflow (LangGraph)</h3>
+    <p>
+        The system is implemented as a deterministic state machine using LangGraph. Each decision request flows through
+        explicit
+        nodes: intake normalization, authoritative RAG retrieval, historical memory lookup, independent analysis,
+        structured planning,
+        decision synthesis, confidence modeling, and report generation. Each node owns specific state fields and
+        produces a
+        semantically complete state when executed. This architecture avoids hidden coupling and ensures traceability
+        across the
+        entire reasoning pipeline.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/04d08503-eda9-4ef3-a3a8-c5580f024c5d"
+        class="portfolio-details__img" alt="RAG Context and Evidence" />
+
+    <h3>Authoritative RAG & Context Governance</h3>
+    <p>
+        Organizational documents can be uploaded and treated as authoritative constraints. Documents are embedded and
+        stored in
+        ChromaDB, retrieved via semantic similarity, and injected into the decision context. The system explicitly
+        distinguishes
+        between authoritative context (organizational truth) and historical decisions (precedent evidence). This reduces
+        hallucinations
+        and enforces alignment with real-world business constraints.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/bba00816-addb-48c9-b159-703455f4a9d2"
+        class="portfolio-details__img" alt="Historical Decisions" />
+
+    <h3>Historical Decision Intelligence</h3>
+    <p>
+        The system maintains long-term semantic memory of past decisions. Similarity-based retrieval identifies related
+        historical
+        cases and computes an influence factor that adjusts final confidence. This allows the engine to quantify
+        precedent impact
+        rather than merely referencing it, moving toward AI governance rather than simple generation.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/dbfe0f52-ffcd-4235-8a84-47c140a0e62e"
+        class="portfolio-details__img" alt="Decision Output" />
+
+    <h3>Deterministic Confidence Modeling</h3>
+    <p>
+        Confidence is not taken from the LLM. Instead, the system computes base confidence, applies historical influence
+        adjustments,
+        and derives a final deterministic score with explicit label mapping. Low-confidence outcomes can trigger retries
+        or fallback
+        handling. Confidence drift tracking allows monitoring changes over time, separating generative output from
+        evaluation metrics.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/56dfc6e6-4517-4c03-85cf-feb5da4a454b"
+        class="portfolio-details__img" alt="Session Report" />
+
+    <h3>Audit-Ready Session Reporting</h3>
+    <p>
+        Every session generates a structured report including decision outcome, reasoning, contextual evidence,
+        historical influence,
+        and full confidence breakdown. Reports are exportable in HTML, PDF, and DOCX formats, supporting governance
+        workflows and
+        executive-level documentation requirements.
+    </p>
+
+    <img src="https://github.com/user-attachments/assets/11398f77-2d9a-43c8-b1f8-2ceb210cc9c4"
+        class="portfolio-details__img" alt="System Messages and Logs" />
+
+    <h3>Cost Governance & Deployment Awareness</h3>
+    <p>
+        A dedicated Token Budget Manager enforces session-level and daily limits to control cloud costs in the public
+        Hugging Face
+        deployment. Quota exhaustion leads to explicit refusal rather than uncontrolled LLM calls. Logging is performed
+        at node level
+        via a decorator-based system, ensuring traceable execution and easier debugging in production-like environments.
+    </p>
+
+    <br />
+
+</div>
+

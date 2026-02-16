@@ -89,9 +89,14 @@ app.get('/projects/portfolio-item-12', (req, res) => {
     res.render('projects/portfolio-item-12');
 });
 
-// Routing per il dettaglio del progetto 12
+// Routing per il dettaglio del progetto 13
 app.get('/projects/portfolio-item-13', (req, res) => {
     res.render('projects/portfolio-item-13');
+});
+
+// Routing per il dettaglio del progetto 14
+app.get('/projects/portfolio-item-14', (req, res) => {
+    res.render('projects/portfolio-item-14');
 });
 
 
