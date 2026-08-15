@@ -1,0 +1,268 @@
+<!-- Introduction -->
+<section class="portfolio-item__intro">
+    <div class="portfolio-item-intro__content">
+        <!-- Header -->
+        <div class="portfolio-item-intro__text">
+            <h1 class="portfolio-item__title--intro">
+                AI Interview Simulator
+            </h1>
+            <p class="portfolio-item__subtitle--intro">
+                Enterprise-grade AI Interview Simulation platform built with LangGraph adaptive orchestration,
+                Hybrid RAG + LLM question generation, deterministic evaluation and reasoning pipelines,
+                contextual follow-ups, longitudinal continuity, and structured coaching reports.
+            </p>
+
+            <!-- Link to live site -->
+            <p class="portfolio-item-links">
+                <a href="https://huggingface.co/spaces/gianmarioiamoni67/ai-interview-simulator" target="_blank"
+                    rel="noopener noreferrer" class="btn">
+                    <i class="fas fa-external-link-alt"></i> Visit Live Demo
+                </a>
+                <a href="https://github.com/gianmarioiamoni/ai-interview-simulator/" target="_blank"
+                    rel="noopener noreferrer" class="btn btn--secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </p>
+
+            <p class="portfolio-item-description">
+                AI Interview Simulator is a production-quality platform designed to simulate adaptive,
+                multi-domain technical interviews at senior engineering and engineering management level.
+                Built with Python 3.11, LangGraph, LangChain, OpenAI models, ChromaDB, and Gradio, it implements
+                a 17-node interview orchestration graph covering question generation, adaptive navigation,
+                contextual follow-ups, dimensional answer evaluation, deterministic reasoning, and structured
+                reporting. The platform combines Hybrid RAG + LLM pipelines with a fully deterministic Interview
+                Reasoner, longitudinal candidate profiling, deterministic session replay, and explainable
+                hire-decision gating to turn an interview into a repeatable and measurable engineering process.
+            </p>
+        </div>
+
+        <!-- Image -->
+        <img src="https://github.com/user-attachments/assets/57ff54b1-72ec-416d-8398-f6a363a86d8e"
+            alt="AI Interview Simulator Setup" class="portfolio-item-intro__img fade-in-image">
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="portfolio-item-individual">
+
+    <!-- Technologies -->
+    <section class="technologies">
+        <div class="technology tag language">
+            <i class="fab fa-python"></i> Python 3.11+
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-project-diagram"></i> LangGraph 1.1
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-link"></i> LangChain
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-robot"></i> OpenAI
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> ChromaDB 1.4
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-window-maximize"></i> Gradio 5.23
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> SQLite
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-cloud"></i> Hugging Face Spaces
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-file-pdf"></i> WeasyPrint
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-check-circle"></i> Pydantic 2.12
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-vial"></i> Pytest
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-cogs"></i> Docker / CI
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <h3>Key Functionalities:</h3>
+    <ul>
+        <li>Adaptive multi-domain technical interviews across Written, Coding, and SQL domains</li>
+        <li>17-node LangGraph interview orchestration with dynamic routing and context-aware navigation</li>
+        <li>Hybrid RAG + LLM question generation with semantic deduplication</li>
+        <li>Conversational Humanizer with deterministic selection and follow-up validation</li>
+        <li>Policy-driven contextual follow-up engine with guard validation</li>
+        <li>Dimensional answer evaluation across technical depth, system design, engineering judgment, communication, and behavioral signals</li>
+        <li>Deterministic Interview Reasoner with 13 pattern detectors and no LLM dependency</li>
+        <li>EvaluationSignalWriter mapping evaluation results to typed evidence signals</li>
+        <li>Hire-decision gating with normalized scoring and explainability anchors</li>
+        <li>LongitudinalProfile for cross-session candidate progress tracking</li>
+        <li>Deterministic session replay graph and Replay UI with no LLM on the replay path</li>
+        <li>Unified coaching report with executive summary, strengths, knowledge gaps, strategy, and benchmark</li>
+        <li>PDF and JSON report export</li>
+        <li>Business context integration using job descriptions and company descriptions</li>
+        <li>Chroma vector corpus with Hugging Face Dataset backup and restore</li>
+        <li>Feature-flagged experimental paths for humanizer, follow-up, and adaptive navigation</li>
+        <li>Production-oriented QA harness covering backend, UI, and stress verification</li>
+        <li>Strict Domain-Driven Design architecture with frozen contracts and inward-only dependencies</li>
+    </ul>
+
+    <h3>Adaptive Interview Setup</h3>
+    <p>
+        The interview starts from a configurable setup where the candidate can select the interview type, seniority
+        level, interview length, and preferred coding languages. This initial configuration establishes the scope and
+        difficulty of the session and provides the foundation for the adaptive interview flow across Written, Coding,
+        and SQL domains.
+    </p>
+    <img src="https://github.com/user-attachments/assets/57ff54b1-72ec-416d-8398-f6a363a86d8e"
+        class="portfolio-details__img" alt="AI Interview Simulator Setup" />
+
+    <h3>Business Context &amp; Advanced Interview Configuration</h3>
+    <p>
+        Optional company and role context can be added to tailor the interview experience and generated questions.
+        The platform uses this session-level business context together with seniority and interview configuration
+        to adapt question generation, coverage management, and navigation to different technical profiles and
+        business scenarios.
+    </p>
+    <img src="https://github.com/user-attachments/assets/7c7a2951-45b3-41ea-92ec-607c97c87cf1"
+        class="portfolio-details__img" alt="Advanced Interview Context Setup" />
+
+    <h3>Adaptive Technical Interview Flow</h3>
+    <p>
+        Questions are generated and selected through a hybrid RAG + LLM pipeline and organized across multiple
+        technical domains. The interview graph maintains session coverage and candidate context while dynamically
+        routing the conversation. Written questions can explore problem-solving, technical background, and
+        engineering experience, with the next question influenced by the candidate's previous responses.
+    </p>
+    <img src="https://github.com/user-attachments/assets/4b9dcc93-d62e-4788-b6c1-5a30aff27b98"
+        class="portfolio-details__img" alt="Technical Background Question" />
+
+    <h3>Structured Answer Evaluation &amp; Coaching</h3>
+    <p>
+        Every submitted answer is evaluated through a structured pipeline that produces a score, strengths,
+        improvement areas, and actionable suggestions. The evaluation is designed to provide useful coaching rather
+        than a simple pass/fail result, while the resulting signals can feed subsequent reasoning and the final
+        interview assessment.
+    </p>
+    <img src="https://github.com/user-attachments/assets/38d6e092-a74e-4a91-bfab-b05e7c94be6e"
+        class="portfolio-details__img" alt="Written Question Feedback" />
+
+    <h3>Contextual Follow-Up &amp; Conversational Continuity</h3>
+    <p>
+        The follow-up engine generates policy-driven questions based on the candidate's previous answer and the
+        current interview context. Follow-ups are LLM-generated but validated by deterministic guards, allowing
+        the interview to behave more like a real technical conversation while preserving explicit control over
+        coverage and question quality.
+    </p>
+    <img src="https://github.com/user-attachments/assets/2ba73cd4-c7f7-4a0f-9ada-7540e24a0984"
+        class="portfolio-details__img" alt="Contextual Technical Follow-Up" />
+
+    <h3>Diagnostic Feedback &amp; Iterative Improvement</h3>
+    <p>
+        The platform distinguishes between correct, partial, and incorrect answers and provides targeted feedback
+        for each case. For partial answers, the evaluation identifies what was correct, what is missing, and how
+        the candidate could improve the response, with the option to retry before continuing the interview.
+    </p>
+    <img src="https://github.com/user-attachments/assets/22b674ae-8fd8-4e07-8634-5d12f1e8f565"
+        class="portfolio-details__img" alt="Partial Answer Feedback" />
+
+    <h3>Interactive SQL Interview &amp; Automated Evaluation</h3>
+    <p>
+        The SQL domain provides database schemas, realistic data-access tasks, and an interactive query editor.
+        Submitted queries are executed against test cases and evaluated automatically, producing structured results,
+        scores, diagnostics, and improvement suggestions. This allows database knowledge to be assessed through
+        executable evidence rather than purely theoretical questions.
+    </p>
+    <img src="https://github.com/user-attachments/assets/7acd3d07-dd79-4d26-8c20-8a5f23921f11"
+        class="portfolio-details__img" alt="SQL Database Question" />
+    <img src="https://github.com/user-attachments/assets/66d741c6-6776-40ce-a78b-084371a1bc42"
+        class="portfolio-details__img" alt="SQL Database Feedback" />
+
+    <h3>AI-Assisted Debugging &amp; Hints</h3>
+    <p>
+        When a SQL solution fails, the simulator exposes test failures and diagnostic information and can provide
+        an actionable AI-generated hint. The objective is not simply to mark the answer as wrong, but to guide the
+        candidate toward identifying the underlying issue and improving the solution.
+    </p>
+    <img src="https://github.com/user-attachments/assets/d685b2a7-8efd-40db-a4e3-32e2f29cc507" 
+        class="portfolio-details__img" alt="SQL Question Feedback with Hints" />
+
+    <h3>Interactive Coding Challenges</h3>
+    <p>
+        Coding interviews provide a complete problem specification, execution contract, examples, and an interactive
+        code editor. Solutions are evaluated against visible and hidden test cases, enabling the platform to assess
+        implementation correctness and edge-case handling in a way that resembles a real technical coding assessment.
+    </p>
+    <img src="https://github.com/user-attachments/assets/d125709f-6d4f-42ba-b21c-3806d06f5b4c"
+        class="portfolio-details__img" alt="Coding Interview Question" />
+
+    <h3>Unified Interview Report</h3>
+    <p>
+        The final report is the sole scoring artifact and consolidates the interview outcome into a structured
+        assessment. It includes an overall readiness score, executive summary, strengths, areas for improvement,
+        and evidence-backed coaching insights. The report is designed to provide both a concise hiring signal and
+        actionable guidance for the candidate.
+    </p>
+    <img src="https://github.com/user-attachments/assets/f397941b-6445-4a06-bda7-157e9500e131"
+        class="portfolio-details__img" alt="Final Interview Report" />
+
+    <h3>Knowledge Gaps &amp; Next Interview Strategy</h3>
+    <p>
+        The report translates interview evidence into prioritized development areas. Knowledge gaps are connected
+        to the evaluated dimensions and converted into a next-interview strategy, giving the candidate concrete
+        priorities for improving technical depth, system design, or other identified weaknesses.
+    </p>
+    <img src="https://github.com/user-attachments/assets/c16145a4-ec37-457c-95c9-c2e62daf5f13"
+        class="portfolio-details__img" alt="Knowledge Gaps and Next Interview Strategy" />
+
+    <h3>Dimension Analysis &amp; Question-Level Assessment</h3>
+    <p>
+        Performance is analyzed both at dimension level and at individual-question level. Dimension scores provide
+        a high-level view of technical depth, system design, and problem solving, while question-level evidence
+        exposes the specific strengths and weaknesses that contributed to the overall assessment.
+    </p>
+    <img src="https://github.com/user-attachments/assets/e6160cea-0395-4c6b-879c-ab41f49ed42c"
+        class="portfolio-details__img" alt="Dimension Analysis and Question-Level Assessment" />
+
+    <h3>Benchmarking, Decision Rationale &amp; Behavioral Insights</h3>
+    <p>
+        The reporting layer compares interview performance against a benchmark population and exposes the factors
+        that influenced the readiness decision. Behavioral and narrative insights provide additional evidence about
+        problem-solving patterns, system-level thinking, and other recurring signals observed during the interview.
+    </p>
+    <img src="https://github.com/user-attachments/assets/19c3abf2-562f-4a42-a5b5-538485cc1052"
+        class="portfolio-details__img" alt="Interview Benchmark and Decision Rationale" />
+
+    <h3>Progress Tracking &amp; Session History</h3>
+    <p>
+        After completing an interview, candidates can review their progress, download the generated report, replay
+        a completed session, or start a new interview. The post-interview area also provides access to previous
+        completed sessions and actions for continuing the interview workflow.
+    </p>
+    <img src="https://github.com/user-attachments/assets/22267ecc-f99a-427c-aa7c-6766674d65dd"
+        class="portfolio-details__img" alt="Progress Tracking and Session Actions" />
+
+    <h3>Longitudinal Candidate Continuity</h3>
+    <p>
+        The platform preserves session history and supports longitudinal candidate development. This creates the
+        foundation for comparing performance over time and using previous interview evidence to improve future
+        preparation and assessment.
+    </p>
+    <img src="https://github.com/user-attachments/assets/f4ab9ff1-c73c-4922-8548-e90b54b433e4"
+        class="portfolio-details__img" alt="Session History and Progress Tracking" />
+
+    <h3>Professional PDF Reporting</h3>
+    <p>
+        Interview results can be exported as a clean, printable PDF suitable for professional review. The generated
+        document includes the overall score, executive summary, performance by dimension, benchmark information,
+        and decision context, supporting both candidate coaching and structured evaluation workflows.
+    </p>
+    <img src="https://github.com/user-attachments/assets/0d17f0af-807e-4cf1-b8ac-36c40cc290e7"
+        class="portfolio-details__img" alt="PDF Interview Evaluation Report" />
+
+    <br />
+
+</div>
