@@ -1,0 +1,215 @@
+<% /* Introduction */ %>
+<section class="portfolio-item__intro">
+    <div class="portfolio-item-intro__content">
+        <% /* Header */ %>
+        <div class="portfolio-item-intro__text">
+            <h1 class="portfolio-item__title--intro">
+                FreelanceOS
+            </h1>
+            <p class="portfolio-item__subtitle--intro">
+                A production-ready freelance operations platform for time tracking, client and contract management,
+                invoicing, payment visibility, and revenue analytics, built with Next.js, TypeScript, PostgreSQL,
+                Prisma, and Better Auth.
+            </p>
+
+            <% /* Link to live site */ %>
+            <p class="portfolio-item-links">
+                <a href="https://freelance-os-timeplan.vercel.app/" target="_blank"
+                    rel="noopener noreferrer" class="btn">
+                    <i class="fas fa-external-link-alt"></i> Visit Live Demo
+                </a>
+                <a href="https://github.com/gianmarioiamoni/freelance-os" target="_blank"
+                    rel="noopener noreferrer" class="btn btn--secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </p>
+
+            <p class="portfolio-item-description">
+                FreelanceOS is a full-stack web application designed to bring the core operational workflows of an
+                independent professional into one workspace. It connects time entries to clients and contracts,
+                preserves billing details for historical consistency, tracks invoices and payments, and surfaces
+                revenue and contract-capacity indicators through dashboards and reports. The application uses a
+                layered architecture with domain, application, infrastructure, and feature boundaries; workspace-level
+                data isolation; Better Auth authentication; and Prisma-managed PostgreSQL migrations. Its reporting
+                capabilities include period-based revenue visibility, client and timesheet analysis, and exportable
+                invoice and cash reports. An AI Assistant interface is also available for natural-language queries
+                over workspace analytics, with its production provider configuration kept explicitly separate.
+            </p>
+        </div>
+
+        <% /* Image */ %>
+        <img src="https://github.com/user-attachments/assets/0e41a147-e8a9-44ef-81db-69223b53548d"
+            alt="FreelanceOS Dashboard" class="portfolio-item-intro__img fade-in-image">
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="portfolio-item-individual">
+
+    <% /* Technologies */ %>
+    <section class="technologies">
+        <div class="technology tag framework">
+            <i class="fas fa-layer-group"></i> Next.js 15
+        </div>
+        <div class="technology tag language">
+            <i class="fas fa-code"></i> TypeScript 5.9
+        </div>
+        <div class="technology tag framework">
+            <i class="fab fa-react"></i> React 19
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-database"></i> PostgreSQL 17
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-project-diagram"></i> Prisma 6
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-shield-alt"></i> Better Auth
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-paint-brush"></i> Tailwind CSS 4
+        </div>
+        <div class="technology tag framework">
+            <i class="fas fa-cubes"></i> Shadcn UI / Radix UI
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-vial"></i> Vitest
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-check-circle"></i> Playwright
+        </div>
+        <div class="technology tag other">
+            <i class="fas fa-cloud"></i> Vercel
+        </div>
+        <div class="technology tag database">
+            <i class="fas fa-server"></i> Neon
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <h3>Key Functionalities:</h3>
+    <ul>
+        <li>Operational dashboard with monthly hours, billable time, revenue status, alerts, and contract-capacity indicators</li>
+        <li>Client directory with contact and business details, active/archived status, and contract history</li>
+        <li>Hourly and daily contracts with rates, currencies, validity periods, commitment modes, and allocated budgets</li>
+        <li>Daily and weekly time tracking linked to clients and contracts, including billable status and billing snapshots</li>
+        <li>Invoice lifecycle tracking with references, issue dates, due dates, payment terms, and voiding support</li>
+        <li>Payment recording and visibility into paid, outstanding, and partially settled invoices</li>
+        <li>Revenue overview for accrued, expected, forecast, invoiced, paid, and outstanding amounts</li>
+        <li>Reports for hours by client, monthly timesheets, contract allocation, and utilization</li>
+        <li>Annual invoice and cash reporting with CSV and XLSX exports</li>
+        <li>Invoice report exports in CSV, Excel (XLSX), and PDF formats</li>
+        <li>Workspace-scoped data access and membership roles</li>
+        <li>Email/password authentication, Google OAuth integration, and password recovery workflow</li>
+        <li>Workspace settings for timezone, currency, and operational warning thresholds</li>
+        <li>System alerts and user notifications for contract, capacity, billing, and payment events</li>
+        <li>AI Assistant interface for natural-language questions about workspace analytics</li>
+        <li>Layered application architecture with Prisma migrations and automated quality checks</li>
+    </ul>
+
+    <h3>Operational Dashboard</h3>
+    <p>
+        The dashboard brings key operational and financial indicators into a single monthly overview. It combines
+        worked and billable hours with accrued, invoiced, paid, and outstanding revenue, while highlighting active
+        alerts and contract-capacity utilization. This gives freelancers a quick view of delivery activity and cash-flow
+        status without switching between separate tools.
+    </p>
+    <img src="https://github.com/user-attachments/assets/0e41a147-e8a9-44ef-81db-69223b53548d"
+        class="portfolio-details__img" alt="FreelanceOS monthly dashboard" />
+
+    <h3>Weekly Time Tracking</h3>
+    <p>
+        Time entries can be reviewed in a weekly view and associated with the relevant client and contract. Each entry
+        records its date, duration, description, and billable status, supporting a consistent link between work performed
+        and the commercial agreement under which it was delivered.
+    </p>
+    <img src="https://github.com/user-attachments/assets/30aa7641-df6a-4888-b9bf-0d3e09091f21"
+        class="portfolio-details__img" alt="FreelanceOS weekly time tracking" />
+
+    <h3>Daily Time Tracking</h3>
+    <p>
+        The daily view provides a more granular way to review and manage individual work entries. It supports day-level
+        inspection and entry management while complementing the weekly overview for planning and timesheet review.
+    </p>
+    <img src="https://github.com/user-attachments/assets/db3505e7-e473-4f2d-8e72-72a320d09b5c"
+        class="portfolio-details__img" alt="FreelanceOS daily time tracking" />
+
+    <h3>Client Management</h3>
+    <p>
+        The client directory centralizes business identity and contact information, including company details and notes.
+        Clients can be marked active or archived, and their associated contract history remains available to support
+        continuity across engagements.
+    </p>
+    <img src="https://github.com/user-attachments/assets/bcfe7163-2d07-42c5-bbe2-bc85a24fa097"
+        class="portfolio-details__img" alt="FreelanceOS client directory" />
+
+    <h3>Contract and Commitment Management</h3>
+    <p>
+        Contracts define the commercial terms of an engagement: hourly or daily billing model, rate, currency, validity
+        period, and commitment configuration. Allocation and utilization indicators help make progress against agreed
+        capacity visible and connect recorded work to the relevant billing rules.
+    </p>
+    <img src="https://github.com/user-attachments/assets/13fba588-e7a3-41f8-9d02-ad8209ef5b4f"
+        class="portfolio-details__img" alt="FreelanceOS contracts overview" />
+
+    <h3>Invoices and Payments</h3>
+    <p>
+        Invoice tracking provides a consolidated view of billing activity, including invoice references, issue dates,
+        amounts, payment terms, and due dates. Payment records allow the application to represent settlement progress
+        and distinguish paid, partially paid, overdue, and outstanding amounts where applicable.
+    </p>
+    <img src="https://github.com/user-attachments/assets/2508b9b2-dacf-490c-9123-cd0b28e35942"
+        class="portfolio-details__img" alt="FreelanceOS invoices and payment status" />
+
+    <h3>Revenue Analytics and Reports</h3>
+    <p>
+        Reporting views summarize financial performance across a selected period and break down work by client. Revenue
+        indicators distinguish accrued, expected, forecast, invoiced, paid, and outstanding values. Monthly timesheet
+        reports and contract utilization tables help connect operational activity to financial outcomes.
+    </p>
+    <img src="https://github.com/user-attachments/assets/93df763f-157f-4d91-84e8-1e8e5ae2aab1"
+        class="portfolio-details__img" alt="FreelanceOS reports and analytics" />
+
+    <h3>Notifications and Operational Alerts</h3>
+    <p>
+        The notification and alert system surfaces operational warnings related to contracts, monthly capacity,
+        allocations, invoicing, and payments. These signals help users identify items that may need attention as part
+        of their regular workflow.
+    </p>
+    <img src="https://github.com/user-attachments/assets/c4ded0c7-cb82-422e-b316-d0ef6bd401be"
+        class="portfolio-details__img" alt="FreelanceOS notifications and alerts" />
+
+    <h3>AI Assistant</h3>
+    <p>
+        The application includes a conversational interface intended to answer natural-language questions about
+        workspace analytics, including revenue, recorded hours, and contracts. AI provider integration is configurable;
+        the production provider is not enabled by default, so the interface should not be presented as making live AI
+        requests unless the deployment has been explicitly configured to do so.
+    </p>
+
+    <h3>Authentication and Workspace Isolation</h3>
+    <p>
+        Better Auth supports email/password authentication and Google OAuth, alongside the password-recovery workflow.
+        Workspace membership and roles provide the application context for operational data, with records scoped to the
+        relevant workspace. Initial onboarding guides a new user through workspace creation.
+    </p>
+
+    <h3>Workspace Settings</h3>
+    <p>
+        Workspace settings provide controls for timezone, currency, and warning thresholds used by operational views.
+        These settings allow the application to reflect the user's working context and make capacity-related warnings
+        more relevant to the workspace.
+    </p>
+
+    <h3>Exportable Financial Reports</h3>
+    <p>
+        Invoice and cash reporting supports exporting data for further analysis and record keeping. Invoice reports can
+        be exported to CSV, XLSX, and PDF, while the annual invoice and cash report provides yearly billed and collected
+        totals with CSV/XLSX export options.
+    </p>
+
+    <br />
+
+</div>
